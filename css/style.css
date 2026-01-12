@@ -1,0 +1,144 @@
+body{
+  margin: 0;
+  font-family: 'Heebo', sans-serif;
+}
+
+.container {
+  width: 1440px;
+  max-width: 90%;
+  margin: auto;
+}
+
+/* HEADER */
+
+header {
+  height: 80px;
+  box-shadow: 0px 1px 6px rgba(0,0,0,0.1);
+}
+
+header section.logo img{
+  width: 150px;
+  height: auto;
+}
+
+header nav ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+
+header nav ul li a{
+  text-decoration: none;
+  color: #3e3e3e;
+  font-size: 16px;
+}
+
+header nav ul li a:hover{
+  color: #33C6DD;
+}
+
+header nav ul li button{
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header nav ul img{
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: block;
+}
+
+header .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #3E3E3E;
+  color:hsla(0, 0%, 100%, .6);
+  padding: 60px 0;
+}
+
+footer .container {
+  width: 1200px;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li img{
+  width: 150px;
+  height: auto;
+}
+
+footer ul li a.list-title{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 14px;
+  color: #ffffff;
+}
+
+footer ul.social-logos{
+  display: flex;
+  justify-content: space-between;
+}
+
+footer ul.social-logos img {
+  width: 40px;
+}
+
+footer ul li.footer-contact{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+footer ul li.footer-contact img {
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+}
+
+footer ul li {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: hsla(0, 0%, 100%, .6);
+}
+
+/* COPYRIGHT */
+
+section.copyright {
+  text-align: center;
+  color:hsla(0, 0%, 100%, .6);
+  background-color: #2B2B2B;
+  padding: 20px 0;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+}
