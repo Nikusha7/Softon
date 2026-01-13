@@ -5,7 +5,7 @@ body{
 
 .container {
   width: 1440px;
-  max-width: 90%;
+  max-width: 80%;
   margin: auto;
 }
 
@@ -33,11 +33,12 @@ header nav ul{
 header nav ul li a{
   text-decoration: none;
   color: #3e3e3e;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 header nav ul li a:hover{
-  color: #33C6DD;
+  color: #1fa8bd;
+  /* color: #33C6DD; */
 }
 
 header nav ul li button{
@@ -63,6 +64,112 @@ header .container {
   align-items: center;
   justify-content: space-between;
 }
+
+
+/* HERO */
+
+section.hero-section {
+  position: relative;
+}
+
+section.hero-section img {
+  width: 100%;
+  height: auto;
+}
+
+section.hero-section .hero-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+section.hero-section .hero-content .container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+section.hero-section .hero-content h1,
+section.hero-section .hero-content p
+{
+  color: white;
+  max-width: 495px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+section.hero-section .hero-content h1 {
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 56px;
+}
+
+section.hero-section .hero-content p {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+section.hero-section button {
+  width: 200px;
+  height: 50px;
+  background-color: #2b1d75;
+  border: 1px solid #2b1d75;
+  border-radius: 25px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+section.hero-section button:hover{
+  background-color: #1fa8bd;
+}
+
+
+/* STATS SECTION */
+
+section.stats-section .container {
+ background-color: hwb(188 20% 13% / 0.80);
+ border: 1px solid hwb(188 20% 13% / 0.80);
+ border-radius: 100px;
+ margin-top: 20px;
+ margin-bottom: 26px;
+ padding: 20px 0;
+}
+
+section.stats-section ul.stats-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+section.stats-section li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+}
+
+section.stats-section span.stat-number {
+  font-size: 48px;
+  font-weight: 700;
+  color: #555;
+  line-height: 50px;
+}
+
+section.stats-section span.stat-label {
+  font-size: 20px;
+  color: #555;
+  letter-spacing: 0.04em;
+}
+
+
 
 /* FOOTER */
 
@@ -129,6 +236,10 @@ footer ul li {
 footer ul li a {
   text-decoration: none;
   color: hsla(0, 0%, 100%, .6);
+}
+
+footer ul li a:hover {
+  color: #1fa8bd;
 }
 
 /* COPYRIGHT */
