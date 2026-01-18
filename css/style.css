@@ -321,3 +321,20 @@ section.services-section div.services-card-center p {
   color: hsla(0, 0%, 100%, 0.945);
 
 }
+
+section.services-section a.expand{
+  display: inline-flex;
+  align-items: center;
+  font-size: large;
+  padding: 3px;
+  font-weight: 400;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  transition: color 0.1s ease, transform 0.3s;
+
+}
+
+section.services-section a.expand:hover {
+  color: #2f9b35;
+  transform: translateX(5px);
+}
