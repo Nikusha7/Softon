@@ -1,4 +1,4 @@
-body{
+body {
   margin: 0;
   font-family: 'Heebo', sans-serif;
 }
@@ -13,15 +13,15 @@ body{
 
 header {
   height: 80px;
-  box-shadow: 0px 1px 6px rgba(0,0,0,0.1);
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
 }
 
-header section.logo img{
+header section.logo img {
   width: 150px;
   height: auto;
 }
 
-header nav ul{
+header nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -30,18 +30,18 @@ header nav ul{
   gap: 26px;
 }
 
-header nav ul li a{
+header nav ul li a {
   text-decoration: none;
   color: #3e3e3e;
   font-size: 20px;
 }
 
-header nav ul li a:hover{
+header nav ul li a:hover {
   color: #1fa8bd;
   /* color: #33C6DD; */
 }
 
-header nav ul li button{
+header nav ul li button {
   background: none;
   border: none;
   padding: 0;
@@ -51,7 +51,7 @@ header nav ul li button{
   justify-content: center;
 }
 
-header nav ul img{
+header nav ul img {
   width: 24px;
   height: 24px;
   border-radius: 50%;
@@ -85,7 +85,7 @@ section.hero-section .hero-content {
   height: 100%;
 }
 
-section.hero-section .hero-content .container{
+section.hero-section .hero-content .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -93,8 +93,7 @@ section.hero-section .hero-content .container{
 }
 
 section.hero-section .hero-content h1,
-section.hero-section .hero-content p
-{
+section.hero-section .hero-content p {
   color: white;
   max-width: 495px;
   margin-top: 0;
@@ -124,7 +123,7 @@ section.hero-section button {
   cursor: pointer;
 }
 
-section.hero-section button:hover{
+section.hero-section button:hover {
   background-color: #1fa8bd;
 }
 
@@ -132,12 +131,12 @@ section.hero-section button:hover{
 /* STATS SECTION */
 
 section.stats-section .container {
- background-color: hwb(188 20% 13% / 0.80);
- border: 1px solid hwb(188 20% 13% / 0.80);
- border-radius: 100px;
- margin-top: 20px;
- margin-bottom: 26px;
- padding: 20px 0;
+  background-color: hwb(188 20% 13% / 0.80);
+  border: 1px solid hwb(188 20% 13% / 0.80);
+  border-radius: 100px;
+  margin-top: 20px;
+  margin-bottom: 26px;
+  padding: 20px 0;
 }
 
 section.stats-section ul.stats-list {
@@ -175,7 +174,7 @@ section.stats-section span.stat-label {
 
 footer {
   background-color: #3E3E3E;
-  color:hsla(0, 0%, 100%, .6);
+  color: hsla(0, 0%, 100%, .6);
   padding: 60px 0;
 }
 
@@ -192,12 +191,12 @@ footer ul {
   padding: 0;
 }
 
-footer ul li img{
+footer ul li img {
   width: 150px;
   height: auto;
 }
 
-footer ul li a.list-title{
+footer ul li a.list-title {
   font-weight: 400;
   font-size: 18px;
   line-height: 26px;
@@ -205,7 +204,7 @@ footer ul li a.list-title{
   color: #ffffff;
 }
 
-footer ul.social-logos{
+footer ul.social-logos {
   display: flex;
   justify-content: space-between;
 }
@@ -214,7 +213,7 @@ footer ul.social-logos img {
   width: 40px;
 }
 
-footer ul li.footer-contact{
+footer ul li.footer-contact {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -234,6 +233,7 @@ footer ul li {
 }
 
 footer ul li a {
+  /* links inside the specific footer lists */
   text-decoration: none;
   color: hsla(0, 0%, 100%, .6);
 }
@@ -246,10 +246,95 @@ footer ul li a:hover {
 
 section.copyright {
   text-align: center;
-  color:hsla(0, 0%, 100%, .6);
+  color: hsla(0, 0%, 100%, .6);
   background-color: #2B2B2B;
   padding: 20px 0;
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
+}
+
+/* SERVICES SECTION */
+
+section.services-section div.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+section.services-section div.services-card {
+  border: 1px solid red;
+  background-color: #3E3E3E;
+  border-radius: 10px;
+  margin: 0.5rem;
+  padding: .9%;
+  /* width: 50%; */
+}
+
+section.services-section div.services-card-center {
+  border: 1px solid red;
+  background-color: #3E3E3E;
+  border-radius: 10px;
+  margin: 0.5rem;
+  padding: .9%;
+  grid-column: span 2;
+}
+
+section.services-section div.title-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+  align-items: center;
+}
+
+section.services-section div.title-row h3 {
+  margin: 0;
+}
+
+section.services-section img.service-icon {
+  width: 42px;
+  height: 42px;
+  filter: invert(1);
+}
+
+
+section.services-section div.services-card h3 {
+  font-size: 24px;
+  color: white;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+section.services-section div.services-card p {
+  font-size: 16px;
+  color: hsla(0, 0%, 100%, 0.945);
+  line-height: 24px;
+}
+
+section.services-section div.services-card-center h3 {
+  color: white;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+section.services-section div.services-card-center p {
+  color: hsla(0, 0%, 100%, 0.945);
+
+}
+
+section.services-section a.expand{
+  display: inline-flex;
+  align-items: center;
+  font-size: large;
+  padding: 3px;
+  font-weight: 400;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  transition: color 0.1s ease, transform 0.3s;
+
+}
+
+section.services-section a.expand:hover {
+  color: #2f9b35;
+  transform: translateX(5px);
 }
