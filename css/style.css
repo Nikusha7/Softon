@@ -5,15 +5,23 @@ body {
 
 .container {
   width: 1440px;
-  max-width: 80%;
+  max-width: 90%;
   margin: auto;
+}
+
+h1, h2, h3, p {
+  margin-top: 0;
 }
 
 /* HEADER */
 
 header {
+  position: sticky;
+  top:0;
+  background-color: #ffffff;
   height: 80px;
   box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
 }
 
 header section.logo img {
@@ -33,7 +41,7 @@ header nav ul {
 header nav ul li a {
   text-decoration: none;
   color: #3e3e3e;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 header nav ul li a:hover {
@@ -121,21 +129,25 @@ section.hero-section button {
   color: white;
   font-size: 16px;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 section.hero-section button:hover {
   background-color: #1fa8bd;
+  transform: translateY(-4px);
 }
 
 
 /* STATS SECTION */
 
+section.stats-section {
+  margin: 20px 0 20px 0px;
+}
+
 section.stats-section .container {
   background-color: hwb(188 20% 13% / 0.80);
   border: 1px solid hwb(188 20% 13% / 0.80);
   border-radius: 100px;
-  margin-top: 20px;
-  margin-bottom: 26px;
   padding: 20px 0;
 }
 
@@ -152,7 +164,13 @@ section.stats-section li {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center
+  align-items: center;
+}
+
+section.stats-section li.stat-divider {
+  width: 1px;
+  height: 68px;
+  background: rgba(255, 255, 255, 0.55);
 }
 
 section.stats-section span.stat-number {
@@ -160,6 +178,8 @@ section.stats-section span.stat-number {
   font-weight: 700;
   color: #555;
   line-height: 50px;
+
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
 }
 
 section.stats-section span.stat-label {
@@ -168,6 +188,184 @@ section.stats-section span.stat-label {
   letter-spacing: 0.04em;
 }
 
+/* OFFER SECTION */
+
+section.offer-section {
+  padding: 40px 0px 40px 0px;
+  background-color: #ffffff;
+}
+
+section.offer-section .offer-header {
+  text-align: center;
+  /* max-width: 700px; */
+  margin: 0 auto 40px;
+}
+
+section.offer-section .offer-header h2 {
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  color: #3e3e3e;
+}
+
+section.offer-section .offer-header p {
+  font-size: 18px;
+  line-height: 28px;
+  color: #666;
+}
+
+section.offer-section .offer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  
+}
+
+section.offer-section .offer-card {
+  text-decoration: none;
+  background-color: #ffffff;
+  border: 1px solid #f0f0f0;
+  border-top: 4px solid transparent; 
+  border-radius: 20px;
+  padding: 40px;
+  text-align: left;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.03);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+section.offer-section .offer-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 
+    0px 20px 40px rgba(31, 168, 189, 0.22),
+    0px 0px 20px rgba(31, 168, 189, 0.15);
+  border-color: #f0f0f0; 
+  border-top-color: #1fa8bd;
+  cursor: pointer;
+}
+
+section.offer-section .offer-card img {
+  width: 82px;
+  height: 82px;
+  margin-bottom: 16px;
+}
+
+section.offer-section .offer-card h3 {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 12px;
+  color: #3e3e3e;
+}
+
+section.offer-section .offer-card p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #666;
+}
+
+/* ANIMATION SECTION */
+
+section.animation-section {
+padding: 40px 0px;
+}
+
+section.animation-section .container {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  max-width: 1200px;  
+}
+
+section.animation-section video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.animation-content h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.animation-content p {
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+
+.animation-content button {
+  padding: 12px 28px;
+  border: none;
+  border-radius: 25px;
+  background-color: #1fa8bd;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.animation-content button:hover {
+  background-color: #0e8aa0;
+}
+
+/* PARTNERS SLIDER */
+
+section.partners-section {
+  background-color: #f9f9f9;
+  padding: 20px 0px 40px 0px;
+  text-align: center;
+}
+
+section.partners-section h1 {
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: #3e3e3e;
+}
+
+section.partners-section .partners-carousel {
+display: flex;
+overflow-x: auto;
+}
+
+section.partners-section .partners-carousel::-webkit-scrollbar {
+  display:none;
+}
+
+section.partners-section .partners-slider {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  animation: spin 30s linear infinite;
+  padding-right: 50px;
+}
+
+section.partners-section .partner-item {
+  /* flex: 0 0 5em; */
+  flex: 0 0 auto;
+}
+
+section.partners-section .partner-item img {
+  width: auto;
+  height: 50px;
+  display: block;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+section.partners-section .partner-item img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
+
+@keyframes spin {
+  from {translate: 0;}
+  to {translate: -100%;}
+}
 
 
 /* FOOTER */
@@ -253,6 +451,7 @@ section.copyright {
   line-height: 22px;
   font-weight: 400;
 }
+
 
 /* SERVICES SECTION */
 
