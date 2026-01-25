@@ -311,6 +311,15 @@ section.animation-section video {
   background-color: #0e8aa0;
 }
 
+
+/* WHY SOFTON SECTION */
+
+section.why-softon-section img {
+  height: auto;
+  width: 100%;
+}
+
+
 /* PARTNERS SLIDER */
 
 section.partners-section {
