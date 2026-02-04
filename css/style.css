@@ -40,6 +40,10 @@ header nav ul {
   gap: 26px;
 }
 
+header nav ul li.menu-icon {
+display: none;
+}
+
 header nav ul li a {
   text-decoration: none;
   color: #3e3e3e;
@@ -863,14 +867,15 @@ section.contact-headline {
 
 section.contact-headline h1 {
   font-size: 42px;
+  /* font-size:  clamp(1.8rem, 10vw, 2.6rem); */
   margin-bottom: 14px;
   color: #111;
 }
 
 section.contact-headline p {
-  max-width: 700px;
+  /* max-width: 700px; */
   margin: 0 auto;
-  font-size: 18px;
+  font-size: 22px;
   color: #555;
 }
 
@@ -880,6 +885,7 @@ section.contact-info {
 }
 
 section.contact-info ul {
+  padding: 0;
   display: flex;
   gap: 40px;
   justify-content: space-between;
@@ -1001,7 +1007,6 @@ section.send-message-section textarea {
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
-
 section.send-message-section textarea {
   resize: none;
   min-height: 120px;
@@ -1059,10 +1064,45 @@ section.map iframe {
   max-width: 90%;
 }
 
-/* header */
-
-
 /* footer */
+footer {
+  padding: 50px 0;
+}
+
+footer .container {
+  width: 1180px;
+  max-width: 90%;
+}
+
+footer ul li a.list-title {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+footer ul.social-logos img {
+  width: 36px;
+}
+
+footer ul li.footer-contact {
+  gap: 8px;
+}
+
+footer ul li.footer-contact img {
+  width: 26px;
+  height: 26px;
+}
+
+footer ul li {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 18px;
+}
+
+/* COPYRIGHT */
+section.copyright {
+  padding: 16px 0;
+  font-size: 14px;
+}
 
 /* =========================
    MAIN/LANDING PAGE
@@ -1096,13 +1136,66 @@ section.map iframe {
 /* =========================
    CONTACT US PAGE
 ========================= */
-/* contact headline */
+section.contact-headline {
+  padding: 36px 0 18px 0;
+}
 
-/* contact info */
+section.contact-headline h1 {
+  font-size: 38px;
+  /* font-size:  clamp(1.8rem, 10vw, 2.6rem); */
+  margin-bottom: 14px;
+  color: #111;
+}
 
-/* send message section */
+section.contact-headline p {
+  font-size: 18px;
+}
 
-/* map */
+/* contact infos */
+section.contact-info {
+  padding: 20px 0;
+}
+
+section.contact-info ul {
+  flex-wrap: wrap;
+  gap: 36px;
+  justify-content: center;
+}
+
+section.contact-info li {
+  padding: 22px;
+  width: 40%;
+}
+
+section.contact-info img {
+  width: 34px;
+  height: 34px;
+  margin-bottom: 14px;
+}
+
+/* Send message section */
+section.send-message-section .benefits-box p {
+  font-size: 24px;
+}
+
+section.send-message-section .benefits-box li {
+  line-height: 32px;
+  font-size: 20px;
+}
+
+section.send-message-section h2 {
+  font-size: 24px;
+  margin-bottom: 22px;
+}
+
+.contact-form .btn-primary {
+  font-size: 14px;
+}
+
+/* Map */
+section.map {
+  padding: 60px;
+}
 
 }
 
@@ -1117,9 +1210,19 @@ section.map iframe {
     }
 
 /* header */
+header nav ul li{
+  display: none;
+}
 
+header nav ul li.menu-icon {
+  display: inline-block;
+}
 
 /* footer */
+ footer .container {
+  width: 92%;
+  max-width: 92%;
+}
 
 
 /* =========================
@@ -1154,13 +1257,93 @@ section.map iframe {
 /* =========================
    CONTACT US PAGE
 ========================= */
+
 /* contact headline */
+section.contact-headline {
+  padding: 34px 0 14px 0;
+}
 
-/* contact info */
+section.contact-headline h1 {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
 
-/* send message section */
+section.contact-headline p {
+  font-size: 16px;
+}
 
-/* map */
+/* contact infos */
+section.contact-info {
+  padding: 12px 0 16px 0;
+}
+
+section.contact-info ul {
+  gap: 24px;
+}
+
+section.contact-info img {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 12px;
+}
+
+/* Send message section */
+section.send-message-section .container {
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+section.send-message-section .contact-form {
+  width: 90%;
+  padding: 32px;
+}
+
+section.send-message-section h2 {
+  font-size: 30px;
+  margin-bottom: 16px;
+}
+
+section.send-message-section .contact-grid {
+  column-gap: 18px;
+  row-gap: 14px;
+}
+
+section.send-message-section input,
+section.send-message-section textarea {
+  font-size: 16px;
+}
+
+.contact-form .btn-primary {
+  font-size: 18px;
+}
+
+section.send-message-section .benefits-box {
+  text-align: center;
+}
+
+section.send-message-section .benefits-box p {
+  font-size: 30px;
+  margin-bottom: 22px;
+}
+
+section.send-message-section .benefits-box ul {
+  padding-left: 42px;
+    margin: 0 auto;
+    display: inline-block;
+    text-align: left;
+}
+
+section.send-message-section .benefits-box li {
+  line-height: 34px;
+  font-size: 26px;
+  margin-bottom: 8px;
+  padding-left: 24px;
+}
+
+/* Map */
+section.map {
+  padding: 34px;
+}
 
 } 
 
@@ -1171,15 +1354,50 @@ section.map iframe {
 @media screen and (max-width: 576px) {
 
 .container{
-      width: 92%;
-      max-width: 92%;
-    }
+    width: 92%;
+  max-width: 92%;
+}
 
 /* header */
-
+ header section.logo img{
+      width: 120px;
+}
 
 /* footer */
+footer {
+  padding: 40px 0 10px;
+}
 
+footer .container {
+  flex-wrap: wrap;
+}
+
+footer ul li.footer-contact {
+  justify-content: center;
+}
+
+footer ul.social-logos {
+  justify-content: center;
+  gap: 36px;
+}
+
+footer ul.social-logos li{
+  margin-bottom: 0;
+}
+
+footer ul.social-logos img {
+  width: 40px;
+}
+
+footer ul {
+  width: 100%;
+  margin-bottom: 12px;
+  text-align: center;
+}  
+
+footer ul:last-of-type {
+  margin-bottom: 0;
+}
 
 /* =========================
    MAIN/LANDING PAGE
@@ -1213,11 +1431,91 @@ section.map iframe {
    CONTACT US PAGE
 ========================= */
 /* contact headline */
+section.contact-headline {
+  padding: 30px 0 12px 0;
+}
 
-/* contact info */
+section.contact-headline h1 {
+  font-size: 26px;
+  margin-bottom: 8px;
+}
 
-/* send message section */
+section.contact-headline p {
+  max-width: 320px;
+  font-size: 16px;
+}
 
-/* map */
+/* contact infos */
+section.contact-info {
+  padding: 8px 0 14px 0;
+}
+
+section.contact-info ul {
+  gap: 20px;
+}
+
+section.contact-info img {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+/* Send message section */
+section.send-message-section .container {
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+section.send-message-section .contact-form {
+  width: 90%;
+  padding: 26px;
+}
+
+section.send-message-section h2 {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+section.send-message-section .contact-grid {
+  grid-template-columns: repeat(1, 1fr);
+  gap: 12px;
+}
+
+section.send-message-section input,
+section.send-message-section textarea {
+  font-size: 14px;
+}
+
+.contact-form .btn-primary {
+  font-size: 14px;
+}
+
+section.send-message-section .benefits-box {
+  text-align: center;
+}
+
+section.send-message-section .benefits-box p {
+  font-size: 26px;
+  margin-bottom: 18px;
+}
+
+section.send-message-section .benefits-box ul {
+    padding-left: 42px;
+    margin: 0 auto;
+    display: inline-block;
+    text-align: left;
+}
+
+section.send-message-section .benefits-box li {
+  line-height: 28px;
+  font-size: 22px;
+  margin-bottom: 8px;
+  padding-left: 24px;
+}
+
+/* Map */
+section.map {
+  padding: 10px 30px 30px;
+}
 
 } 
