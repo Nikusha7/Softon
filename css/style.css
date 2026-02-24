@@ -43,7 +43,7 @@ header nav ul {
 }
 
 header nav ul li.menu-icon {
-display: none;
+  display: none;
 }
 
 header nav ul li a {
@@ -54,6 +54,20 @@ header nav ul li a {
 
 header nav ul li a:hover {
   color: #1fa8bd;
+}
+
+header nav ul li a.contact {
+  display: inline-block; 
+  padding: 2px 8px;
+  border-radius: 16px;
+  border: 1px solid hwb(188 20% 13% / 0.80);
+  background-color: hwb(188 20% 13% / 0.80);
+  transition: all 0.3s ease;
+}
+
+header nav ul li a.contact:hover{
+  color: #3e3e3e;
+  transform: translateY(-4px);
 }
 
 header nav ul li button {
@@ -477,7 +491,7 @@ section.copyright {
 /*######################*/
 /* SERVICES PAGE */
 /*######################*/
-
+/* services */
 section.services-section {
   background: linear-gradient(180deg, #f4f6f8 0%, #eef2f5 100%);
 }
@@ -613,7 +627,6 @@ section.services-section a.expand::after {
 }
 
 /* HOW WE WORK SECTION */
-
 section.how-we-work {
   background-color: #3E3E3E;
   padding: 80px 0;
@@ -679,7 +692,7 @@ section.how-we-work .process-step {
 
 section.how-we-work .step-badge {
   position: absolute;
-  top: -20px;
+  top: -28px;
   background-color: #1fbd6e;
   color: #3E3E3E;
   font-size: 11px;
@@ -839,10 +852,229 @@ section.faq details.faq-item p {
   }
 }
 
+/* =========================
+   ABOUT US PAGE
+========================= */
+/* about company */
+section.about-company {
+  padding: 80px 0 40px;
+}
 
+section.about-company .container {
+  display: flex;
+  gap: 60px;
+}
 
+section.about-company .about-text,
+section.about-company .about-image {
+  flex: 1;
+}
 
- 
+section.about-company .about-text h1 {
+  font-size: 48px;
+  color: #3e3e3e;
+  margin-bottom: 2px;
+  line-height: 1.2;
+}
+
+section.about-company .title-divider {
+  height: 3px;
+  width: 100%;
+  background-color: #1fa8bd;
+  margin-bottom: 24px;
+  border-radius: 2px;
+  margin: 16px 0 32px 0;
+}
+
+section.about-company .about-text p {
+  font-size: 22px;
+  color: #475569;
+  margin-bottom: 18px;
+  line-height: 1.6;
+}
+
+section.about-company div.about-image img {
+  height: auto;
+  max-width: 100%;
+  border-radius: 16px;
+}
+
+/* mission vission  */
+section.mission-vision {
+  margin: 40px 0;
+}
+
+section.mission-vision .container {
+  display: flex;
+  gap: 30px;
+}
+
+section.mission-vision .mv-card {
+  position: relative;
+  flex: 1;
+  max-height: 360px;
+}
+
+section.mission-vision .mv-card .mv-content {
+  width: 300px;
+  position: absolute;
+  top: 10%;
+  left: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section.mission-vision .mv-card h3{
+  font-size: 32px;
+  color: #ffffff;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+section.mission-vision .mv-card .title-divider {
+  height: 1px;
+  width: 190px;
+  background-color: #ffffff;
+  margin-bottom: 10px;
+}
+
+section.mission-vision .mv-card p {
+  font-size: 20px;
+  color: #ffffff;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+section.mission-vision .mv-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* crops nicely */
+  display: block;
+}
+
+/* core values */
+section.core-values {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+section.core-values .core-values-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+section.core-values h2{
+  white-space: nowrap;
+  margin: 0;
+  font-size: 32px;
+  color: #3e3e3e;
+}
+
+section.core-values .title-divider {
+  height: 1px;
+  width: 100%;
+  background-color: #1fa8bd;
+  border-radius: 2px;
+}
+
+section.core-values .values-flex {
+  display: flex;
+  gap: 20px;
+}
+
+section.core-values .values-flex .value-card {
+  flex: 1;
+  background-color:#ffffff;
+  padding: 20px 60px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+section.core-values .values-flex .value-card h3{
+font-size: 20px;
+  font-weight: 600;
+  color: #1f2d3d;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+
+section.core-values .values-flex .value-card p{
+  font-size: 15px;
+  line-height: 1.7;
+  color: #6c7a89;
+  margin: 0;
+}
+
+section.core-values .value-icon {
+  margin-bottom: 10px;
+}
+
+section.core-values .value-icon img{
+  height: 55px;
+  width: 55px;
+}
+
+/* team */
+section.team {
+margin-bottom: 40px;
+}
+
+section.team .team-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+section.team .team-title .title-divider {
+  height: 1px;
+  width: 100%;
+  background-color: #1fa8bd;
+  border-radius: 2px;
+}
+
+section.team .team-title h2 {
+  white-space: nowrap;
+  margin: 0;
+  font-size: 32px;
+  color: #3e3e3e;
+}
+
+section.team .team-flex {
+  display: flex;
+  gap: 20px;
+}
+
+section.team .team-flex .team-card {
+  flex: 1;
+}
+
+section.team .team-flex .team-card .team-profile-picture {
+  margin-bottom: 8px;
+}
+
+section.team .team-flex .team-card .team-profile-picture img{
+  width: 100%;
+  height: auto;
+}
+
+section.team .team-flex .team-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #1f2d3d;
+}
+
+section.team .team-flex .team-card p {
+  font-size: 14px;
+  color: #2c4158;
+  margin: 0;
+}
+
 /* =========================
    CONTACT US PAGE
 ========================= */
@@ -1184,6 +1416,79 @@ section.partners-section h1 {
 /* =========================
    ABOUS US PAGE
 ========================= */
+section.about-company {
+  padding: 60px 0 30px;
+}
+
+section.about-company .container {
+  gap: 50px;
+}
+
+section.about-company .about-text h1 {
+  font-size: 44px;
+}
+
+section.about-company .about-text p {
+  font-size: 18px;
+}
+
+/* mission vission  */
+section.mission-vision .container {
+  gap: 30px;
+}
+
+section.mission-vision .mv-card .mv-content {
+  width: 220px;
+  top: 8%;
+  left:40px;
+}
+
+section.mission-vision .mv-card h3{
+  font-size: 26px;
+}
+
+section.mission-vision .mv-card .title-divider {
+  height: 1px;
+  width: 140px;
+  margin-bottom: 8px;
+}
+
+section.mission-vision .mv-card p {
+  font-size: 18px;
+  margin-bottom: 22px;
+}
+
+/* core values */
+section.core-values h2{
+  font-size: 28px;
+}
+
+section.core-values .values-flex .value-card {
+  padding: 20px 40px;
+  margin-bottom: 10px;
+}
+
+section.core-values .values-flex .value-card h3{
+  font-size: 16px;
+}
+
+section.core-values .values-flex .value-card p{
+  font-size: 14px;
+}
+
+/* team */
+section.team .team-title h2 {
+  font-size: 28px;
+}
+
+section.team .team-flex .team-card h3 {
+  font-size: 18px;
+}
+
+section.team .team-flex .team-card p {
+  font-size: 14px;
+}
+
 
 /* =========================
    CONTACT US PAGE
@@ -1302,6 +1607,7 @@ section.hero-section button {
   height: 36px;
   font-size: 12px;
 }
+
 /* stats section */
 section.stats-section .container {
   padding: 16px 0;
@@ -1321,7 +1627,6 @@ section.stats-section span.stat-label {
 }
 
 /* offer section */
-
 section.offer-section {
   padding: 36px 0px 40px 0px;
 }
@@ -1395,6 +1700,115 @@ section.partners-section h1 {
 /* =========================
    ABOUS US PAGE
 ========================= */
+section.about-company {
+  padding: 50px 0 30px;
+}
+
+ section.about-company .container {
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+section.about-company .about-text,
+section.about-company .about-image {
+  max-width: 300px;
+  min-width: 260px;
+}
+
+section.about-company .about-text h1 {
+  font-size: 36px;
+}
+
+section.about-company .title-divider {
+  margin: 12px 0 18px 0;
+}
+
+section.about-company .about-text p {
+  font-size: 16px;
+  margin-bottom: 14px;
+}
+
+section.about-company .about-image {
+  border-radius: 16px;
+}
+  
+/* mission vission  */
+section.mission-vision {
+  margin: 20px 0;
+}
+
+section.mission-vision .container {
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+section.mission-vision .mv-card {
+  /* min-width: 420px; */
+}
+
+section.mission-vision .mv-card .mv-content {
+  /* width: 200px */
+  left: 30px;
+}
+
+section.mission-vision .mv-card h3{
+  font-size: 20px;
+}
+
+section.mission-vision .mv-card .title-divider {
+  width: 120px;
+}
+
+section.mission-vision .mv-card p {
+  font-size: 14px;
+  margin-bottom: 0px;
+}
+
+/* core values */
+section.core-values {
+  margin-bottom: 20px;
+}
+
+section.core-values .values-flex{
+  flex-wrap: wrap;
+}
+
+section.core-values h2{
+  font-size: 26px;
+}
+
+section.core-values .values-flex .value-card {
+  padding: 18px 30px;
+  margin-bottom: 4px;
+}
+
+section.core-values .values-flex .value-card h3{
+  font-size: 14px;
+}
+
+section.core-values .values-flex .value-card p{
+  font-size: 12px;
+}
+
+/* team */
+section.team .team-flex .team-card .team-profile-picture {
+    margin-bottom: 4px;
+}
+
+section.team .team-title h2 {
+  font-size: 26px;
+}
+
+section.team .team-flex .team-card h3 {
+  font-size: 16px;
+  margin-bottom: 2px;
+}
+
+section.team .team-flex .team-card p {
+  font-size: 14px;
+}
+
 
 
 /* =========================
@@ -1620,7 +2034,7 @@ section.offer-section .offer-grid {
 }
 
 section.offer-section .offer-card {
-  margin: 0px 60px;
+  margin: 0px 30px;
   padding: 34px 40px;
 }
 
@@ -1670,6 +2084,123 @@ section.partners-section h1 {
 /* =========================
    ABOUS US PAGE
 ========================= */
+section.about-company {
+  padding: 30px 0 20px;
+}
+
+section.about-company .container {
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+section.about-company .about-text {
+  /* min-width: 460px; */
+  /* ?????????? needs to be improved */
+}
+
+section.about-company .about-text h1 {
+  font-size: 30px;
+}
+
+section.about-company .title-divider {
+  margin: 10px 0 16px 0;
+}
+
+section.about-company .about-text p {
+  font-size: 14px;
+}
+
+section.about-company div.about-image img {
+  min-width: 300px;
+}
+
+/* mission vission  */
+section.mission-vision {
+  margin: 20px 0;
+}
+
+section.mission-vision .container {
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+section.mission-vision .mv-card {
+  max-width: 300px;
+  min-width: 260px;
+}
+
+section.mission-vision .mv-card .mv-content {
+  width: 200px;
+  top: 12%;
+  left: 30px;
+}
+
+section.mission-vision .mv-card h3{
+  font-size: 20px;
+}
+
+section.mission-vision .mv-card .title-divider {
+  width: 110px;
+}
+
+section.mission-vision .mv-card p {
+  font-size: 14px;
+}
+
+/* core values */
+section.core-values {
+  margin-bottom: 20px;
+}
+
+section.core-values .values-flex{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+section.core-values h2{
+  font-size: 22px;
+}
+
+section.core-values .values-flex .value-card {
+  padding: 16px 26px;
+  margin-bottom: 0;
+}
+
+section.core-values .values-flex .value-card h3{
+  font-size: 14px;
+}
+
+section.core-values .values-flex .value-card p{
+  font-size: 12px;
+}
+
+/* team */
+section.team .team-flex{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+section.team .team-flex .team-card {
+
+}
+
+section.team .team-flex .team-card .team-profile-picture {
+    margin-bottom: 2px;
+}
+
+section.team .team-title h2 {
+  font-size: 22px;
+}
+
+section.team .team-flex .team-card h3 {
+  font-size: 14px;
+  margin-bottom: 1px;
+}
+
+section.team .team-flex .team-card p {
+  font-size: 12px;
+}
 
 
 /* =========================
