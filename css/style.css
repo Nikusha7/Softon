@@ -33,7 +33,7 @@ header section.logo img {
   height: auto;
 }
 
-header nav ul {
+header nav ul.nav-ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -42,21 +42,21 @@ header nav ul {
   gap: 26px;
 }
 
-header nav ul li.menu-icon {
+header nav ul.nav-ul li.menu-icon {
   display: none;
 }
 
-header nav ul li a {
+header nav ul.nav-ul li a {
   text-decoration: none;
   color: #3e3e3e;
   font-size: 18px;
 }
 
-header nav ul li a:hover {
+header nav ul.nav-ul li a:hover {
   color: #1fa8bd;
 }
 
-header nav ul li a.contact {
+header nav ul.nav-ul li a.contact {
   display: inline-block; 
   padding: 2px 8px;
   border-radius: 16px;
@@ -65,12 +65,12 @@ header nav ul li a.contact {
   transition: all 0.3s ease;
 }
 
-header nav ul li a.contact:hover{
+header nav ul.nav-ul li a.contact:hover{
   color: #3e3e3e;
   transform: translateY(-4px);
 }
 
-header nav ul li button {
+header nav ul.nav-ul li button {
   background: none;
   border: none;
   padding: 0;
@@ -80,7 +80,7 @@ header nav ul li button {
   justify-content: center;
 }
 
-header nav ul img {
+header nav ul.nav-ul img {
   width: 24px;
   height: 24px;
   border-radius: 50%;
@@ -94,6 +94,66 @@ header .container {
   justify-content: space-between;
 }
 
+header nav .wrapper {
+  position: fixed;
+  top:0;
+  /* left: -100%; */
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 90px 0;
+  text-align: center;
+  z-index: 999;
+  transition: all 0.6s ease-in-out;
+}
+
+header nav .wrapper.nav-open {
+  right: 0;
+}
+
+header nav .wrapper ul.burger-ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 10px;
+}
+
+header nav .wrapper button.close-icon {
+  background-color: #f9f9f9;
+  border: 0;
+}
+
+header nav .wrapper button.close-icon img{
+  width: 50px;
+}
+
+header nav .wrapper ul.burger-ul li a {
+  text-decoration: none;
+  color: #3e3e3e;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 22px;
+}
+
+header nav .wrapper ul.burger-ul li.socials p {
+  color: grey;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 22px;
+  margin-bottom: 30px;
+}
+
+header nav .wrapper ul.burger-ul li.socials img {
+  width: 50px;
+}
 
 /* HERO */
 
@@ -1893,11 +1953,11 @@ section.map {
 }
 
 /* header */
-header nav ul li{
+header nav ul.nav-ul li{
   display: none;
 }
 
-header nav ul li.menu-icon {
+header nav ul.nav-ul li.menu-icon {
   display: inline-block;
 }
 
