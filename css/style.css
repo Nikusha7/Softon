@@ -925,7 +925,7 @@ section.hero-headline button:hover {
 
 /* featuer work/projects */
 section.featured-projects {
-  padding: 20px 0 80px;
+  padding: 20px 0 40px;
   background-color: #f9f9f9;
 }
 
@@ -1025,6 +1025,69 @@ section.featured-projects .project-content a.cta-button {
   border-radius: 8px;
   text-align: center;
   transition: background-color 0.3s ease;
+}
+
+/* clients section/slider */
+section.clients-section {
+  background-color: #f9f9f9;
+  padding: 20px 0px 40px 0px;
+  text-align: center;
+}
+
+section.clients-section h1 {
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: #3e3e3e;
+}
+
+section.clients-section .clients-carousel {
+/* display: flex;
+overflow-x: auto; */
+position: relative;
+overflow: hidden;
+width: 100%;
+}
+
+.clients-marquee {
+  display: flex;
+  width: 100%;
+}
+
+section.clients-section .clients-track {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  width: max-content;
+  
+  animation: marquee 25s linear infinite;
+  will-change: transform;
+}
+
+.clients-item {
+  flex: 0 0 auto;
+}
+
+.clients-item img {
+  height: 50px;
+  width: auto;
+  display: block;
+  /* filter: grayscale(100%); */
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.clients-item img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-50% - 25px));
+  }
 }
 
 /* =========================
@@ -1616,7 +1679,7 @@ section.hero-headline button {
 
 /* featuer work/projects */
 section.featured-projects {
-  padding: 20px 0 80px;
+  padding: 20px 0 30px;
 }
 
 section.featured-projects h1 {
@@ -1656,6 +1719,24 @@ section.featured-projects .project-content .used-tech-stack span{
 section.featured-projects .project-content a.cta-button {
   padding: 10px 18px;
   font-size: 16px;
+}
+
+/* clients section/slider (need to be improved)*/
+section.clients-section {
+  padding: 18px 0px 38px 0px;
+}
+
+section.clients-section h1 {
+  font-size: 34px;
+  margin-bottom: 18px;
+}
+
+section.clients-section .clients-track {
+  gap: 44px;
+}
+
+.clients-item img {
+  height: 48px;
 }
 
 /* =========================
@@ -1974,7 +2055,7 @@ section.hero-headline button {
 
 /* featuer work/projects */
 section.featured-projects {
-  padding: 20px 0 60px;
+  padding: 20px 0 20px;
 }
 
 section.featured-projects h1 {
@@ -2014,6 +2095,24 @@ section.featured-projects .project-content .used-tech-stack span{
 section.featured-projects .project-content a.cta-button {
   padding: 8px 14px;
   font-size: 15px;
+}
+
+/* clients section/slider (need to be improved)*/
+section.clients-section {
+  padding: 16px 0px 34px 0px;
+}
+
+section.clients-section h1 {
+  font-size: 30px;
+  margin-bottom: 14px;
+}
+
+section.clients-section .clients-track {
+  gap: 40px;
+}
+
+.clients-item img {
+  height: 44px;
 }
 
 /* =========================
@@ -2433,7 +2532,7 @@ section.hero-headline button {
 
 /* featuer work/projects */
 section.featured-projects {
-  padding: 10px 0 30px;
+  padding: 10px 0 10px;
 }
 
 section.featured-projects h1 {
@@ -2477,6 +2576,24 @@ section.featured-projects .project-content .used-tech-stack span{
 section.featured-projects .project-content a.cta-button {
   padding: 6px 12px;
   font-size: 14px;
+}
+
+/* clients section/slider (need to be improved)*/
+section.clients-section {
+  padding: 14px 0px 32px 0px;
+}
+
+section.clients-section h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+section.clients-section .clients-track {
+  gap: 32px;
+}
+
+.clients-item img {
+  height: 40px;
 }
 
 /* =========================
