@@ -138,9 +138,3 @@ Recommended:
 ## License
 
 This project is currently private/proprietary unless you explicitly add an open-source license file.
-
----
-
-If you want, I can also generate:
-- a polished `README` with badges and section graphics for GitHub presentation
-- an SEO-focused project description for your repo profile
