@@ -15,22 +15,26 @@
   <header>
     <div class="container">
       <section class="logo">
-        <a href="/">
+        <a href="index.html">
           <img src="img/header-logo.png" alt="header logo">
         </a>
       </section>
       <nav>
         <ul>
-          <li><a href="/services.html">Services</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html" class="contact">Contact Us</a></li>
+          <li><a href="services.html" data-i18n="nav_services">Services</a></li>
+          <li><a href="projects.html" data-i18n="nav_projects">Projects</a></li>
+          <li><a href="about.html" data-i18n="nav_about">About</a></li>
+          <li><a href="contact.html" class="contact" data-i18n="nav_contact">Contact Us</a></li>
           <li>
-            <button type="button" aria-label="Switch language">
-              <img src="img/uk.png" alt="English">
+            <button type="button" class="lang-toggle" aria-label="Switch language" data-i18n-attr="aria-label:switch_language">
+              <img src="img/uk.png" alt="Georgian">
             </button>
           </li>
-          <li class="menu-icon"><img src="img/menu_icon.png" alt="menu icon"> </li>
+          <li class="menu-icon">
+            <button type="button" class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+              <img src="img/menu_icon.png" alt="menu icon">
+            </button>
+          </li>
         </ul>
       </nav>
     </div>
@@ -47,10 +51,10 @@
 
     <section class="hero-content">
       <div class="container">
-        <h1>Turning idea into living software</h1>
-        <p>From concept to launch,
+        <h1 data-i18n="home_hero_title">Turning idea into living software</h1>
+        <p data-i18n="home_hero_subtitle">From concept to launch,
           we craft software that evolves and delivers real value</p>
-        <button>
+        <button type="button" onclick="location.href='contact.html#send-message'" data-i18n="home_hero_cta">
           Request a consultation
         </button>
       </div>
@@ -90,8 +94,8 @@
     <div class="container">
 
       <div class="offer-header">
-        <h2>What We Offer</h2>
-        <p>
+        <h2 data-i18n="home_offer_title">What We Offer</h2>
+        <p data-i18n="home_offer_subtitle">
           We help businesses turn ideas into reliable, scalable, and
           user-friendly digital products.
         </p>
@@ -99,7 +103,7 @@
 
       <div class="offer-grid">
 
-        <a href="/" class="offer-card">
+        <a href="services.html#web-development" class="offer-card">
           <img src="/img/what-we-offer/web-dev-logo.png" alt="Custom software">
           <h3>Web Development</h3>
           <p>
@@ -108,7 +112,7 @@
           </p>
         </a>
 
-        <a href="/" class="offer-card">
+        <a href="services.html#mobile-app-development" class="offer-card">
           <img src="/img/what-we-offer/mobile-dev-logo.png" alt="Scalable architecture">
           <h3>Mobile App Development</h3>
           <p>
@@ -117,7 +121,7 @@
           </p>
         </a>
 
-        <a href="/" class="offer-card">
+        <a href="services.html#digital-product-design" class="offer-card">
           <img src="/img/what-we-offer/UX-UI-logo.png" alt="UI UX design">
           <h3>Digital Product Designs</h3>
           <p>
@@ -126,7 +130,7 @@
           </p>
         </a>
 
-        <a href="/" class="offer-card">
+        <a href="services.html#mvp-development" class="offer-card">
           <img src="/img/what-we-offer/mvp-logo.png" alt="Agile development">
           <h3>MVP Development</h3>
           <p>
@@ -135,7 +139,7 @@
           </p>
         </a>
 
-        <a href="/" class="offer-card">
+        <a href="services.html#custom-software-development" class="offer-card">
           <img src="/img/what-we-offer/custom-dev-logo.png" alt="Communication">
           <h3>Custom Software Development</h3>
           <p>
@@ -145,7 +149,7 @@
         </a>
 
 
-        <a href="/" class="offer-card">
+        <a href="contact.html#send-message" class="offer-card">
           <img src="/img/what-we-offer/tech-support-logo.png" alt="Support">
           <h3>Long-Term Support</h3>
           <p>
@@ -204,7 +208,7 @@
     <div class="container">
       <ul>
         <li>
-          <a href="/"> <img src="img/header-logo.png" alt="footer company logo">
+          <a href="index.html"> <img src="img/header-logo.png" alt="footer company logo">
           </a>
         </li>
         <li class="footer-contact"><img src="img/footer-logos/location.png" alt="Location">Georgia Tbilisi Chavcahvade
@@ -213,45 +217,48 @@
         <li class="footer-contact"><img src="img/footer-logos/email.png" alt="Email">info@softon.ge</li>
         <li>
           <ul class="social-logos">
-            <li><a href="#"><img src="img/footer-logos/facebook.png"></a></li>
-            <li><a href="#"><img src="img/footer-logos/linkedin.png"></a></li>
-            <li><a href="#"><img src="img/footer-logos/tiktok.png"></a></li>
-            <li><a href="#"><img src="img/footer-logos/instagram.png"></a></li>
+            <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><img src="img/footer-logos/facebook.png" alt="Facebook"></a></li>
+            <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><img src="img/footer-logos/linkedin.png" alt="LinkedIn"></a></li>
+            <li><a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><img src="img/footer-logos/tiktok.png" alt="TikTok"></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="img/footer-logos/instagram.png" alt="Instagram"></a></li>
           </ul>
         </li>
       </ul>
       <ul>
-        <li><a href="services.html" class="list-title">Services</a></li>
-        <li><a href="#">Web development</a></li>
-        <li><a href="#">Mobile app development</a></li>
-        <li><a href="#">Digital product designs</a></li>
-        <li><a href="#">MVP development</a></li>
-        <li><a href="#">Custom Software development</a></li>
-        <li><a href="#">Long-Term Support</a></li>
+        <li><a href="services.html" class="list-title" data-i18n="footer_services_title">Services</a></li>
+        <li><a href="services.html#web-development" data-i18n="footer_web_dev">Web development</a></li>
+        <li><a href="services.html#mobile-app-development" data-i18n="footer_mobile_dev">Mobile app development</a></li>
+        <li><a href="services.html#digital-product-design" data-i18n="footer_design">Digital product designs</a></li>
+        <li><a href="services.html#mvp-development" data-i18n="footer_mvp">MVP development</a></li>
+        <li><a href="services.html#custom-software-development" data-i18n="footer_custom">Custom Software development</a></li>
+        <li><a href="contact.html#send-message" data-i18n="footer_support">Long-Term Support</a></li>
       </ul>
       <ul>
-        <li><a href="projects.html" class="list-title">Projects</a></li>
-        <li><a href="#">Healthcare Industry</a></li>
-        <li><a href="#">Fintech Website</a></li>
-        <li><a href="#">E-Commerce Funiture shop</a></li>
-        <li><a href="#">Burger Bar Website</a></li>
-        <li><a href="#">Gym CRM system</a></li>
-        <li><a href="#">Educity - Educational center</a></li>
+        <li><a href="projects.html" class="list-title" data-i18n="footer_projects_title">Projects</a></li>
+        <li><a href="projects.html#healthcare-industry" data-i18n="footer_healthcare">Healthcare Industry</a></li>
+        <li><a href="projects.html#fintech-industry" data-i18n="footer_fintech">Fintech Website</a></li>
+        <li><a href="projects.html#ecommerce-furniture-shop" data-i18n="footer_furniture">E-Commerce Furniture shop</a></li>
+        <li><a href="projects.html#burger-bar" data-i18n="footer_burger">Burger Bar Website</a></li>
+        <li><a href="projects.html#crm-system" data-i18n="footer_crm">Gym CRM system</a></li>
+        <li><a href="projects.html#educity-educational-center" data-i18n="footer_educity">Educity - Educational center</a></li>
       </ul>
       <ul>
-        <li><a href="about.html" class="list-title">About us</a></li>
-        <li><a href="#">About the company</a></li>
-        <li><a href="#">Company Mission</a></li>
-        <li><a href="#">Our Vision</a></li>
-        <li><a href="#">Team</a></li>
+        <li><a href="about.html" class="list-title" data-i18n="footer_about_title">About us</a></li>
+        <li><a href="about.html#about-company" data-i18n="footer_about_company">About the company</a></li>
+        <li><a href="about.html#company-mission" data-i18n="footer_company_mission">Company Mission</a></li>
+        <li><a href="about.html#our-vision" data-i18n="footer_our_vision">Our Vision</a></li>
+        <li><a href="about.html#team" data-i18n="footer_team">Team</a></li>
       </ul>
     </div>
   </footer>
 
   <section class="copyright">
-    2026 &reg; All Rights Reserved
+    <span data-i18n="copyright">2026 &reg; All Rights Reserved</span>
   </section>
 
+  <script src="js/main.js" defer></script>
 </body>
 
 </html>
+
+
