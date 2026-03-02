@@ -14,13 +14,15 @@
 
   <header>
     <div class="container">
+
       <section class="logo">
         <a href="/">
           <img src="img/header-logo.png" alt="header logo">
         </a>
       </section>
+
       <nav>
-        <ul>
+        <ul class="nav-ul">
           <li><a href="/services.html">Services</a></li>
           <li><a href="projects.html">Projects</a></li>
           <li><a href="about.html">About</a></li>
@@ -30,8 +32,47 @@
               <img src="img/uk.png" alt="English">
             </button>
           </li>
-          <li class="menu-icon"><img src="img/menu_icon.png" alt="menu icon"> </li>
+          <li class="menu-icon">
+            <button id="open-nav-menu">
+              <img src="img/menu_icon.png" alt="menu icon">
+            </button>
+          </li>
         </ul>
+
+        <div class="wrapper">
+          <ul class="burger-ul">
+            <li>
+              <button id="close-nav-menu" class="close-icon">
+                <img src="img/close-icon.png" alt="close icon for burger menu">
+              </button>
+            </li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li class="socials">
+              <p>Join our community</p>
+
+              <div>
+                <a href="#">
+                  <img src="img/footer-logos/facebook.png" alt="Facebook logo" />
+                </a>
+                <a href="#">
+                  <img src="img/footer-logos/linkedin.png" alt="linkedin logo" />
+                </a>
+                <a href="#">
+                  <img src="img/footer-logos/tiktok.png" alt="TikTok logo" />
+                </a>
+                <a href="#">
+                  <img src="img/footer-logos/instagram.png" alt="Instagram logo" />
+                </a>
+              </div>
+
+            </li>
+          </ul>
+        </div>
+
       </nav>
     </div>
   </header>
@@ -233,6 +274,7 @@
     2026 &reg; All Rights Reserved
   </section>
 
+  <script src="main.js"></script>
 </body>
 
 </html>
