@@ -83,7 +83,7 @@ header nav ul.nav-ul li button {
 header nav ul.nav-ul img {
   width: 24px;
   height: 24px;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   display: block;
 }
 
@@ -156,7 +156,6 @@ header nav .wrapper ul.burger-ul li.socials img {
 }
 
 /* HERO */
-
 section.hero-section {
   position: relative;
 }
@@ -218,9 +217,7 @@ section.hero-section button:hover {
   transform: translateY(-4px);
 }
 
-
 /* STATS SECTION */
-
 section.stats-section {
   margin: 20px 0 20px 0px;
 }
@@ -259,7 +256,6 @@ section.stats-section span.stat-number {
   font-weight: 700;
   color: #555;
   line-height: 50px;
-
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
 }
 
@@ -270,7 +266,6 @@ section.stats-section span.stat-label {
 }
 
 /* OFFER SECTION */
-
 section.offer-section {
   padding: 40px 0px 40px 0px;
   background-color: #ffffff;
@@ -299,7 +294,6 @@ section.offer-section .offer-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-  
 }
 
 section.offer-section .offer-card {
@@ -314,8 +308,7 @@ section.offer-section .offer-card {
   transition: all 0.3s ease;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  
+  align-items: center; 
 }
 
 section.offer-section .offer-card:hover {
@@ -347,17 +340,13 @@ section.offer-section .offer-card p {
   color: #666;
 }
 
-
 /* WHY SOFTON SECTION */
-
 section.why-softon-section img {
   height: auto;
   width: 100%;
 }
 
-
 /* PARTNERS SLIDER */
-
 section.partners-section {
   background-color: #f9f9f9;
   padding: 20px 0px 40px 0px;
@@ -420,51 +409,7 @@ section.partners-section .partners-track {
   }
 }
 
-/* 
-section.partners-section .partners-carousel::-webkit-scrollbar {
-  display:none;
-}
-
-section.partners-section .partners-slider {
-  display: flex;
-  gap: 50px;
-  align-items: center;
-  justify-content: center;
-  animation: slide 30s linear infinite;
-  padding-right: 50px;
-} */
-
-/*section.partners-section .partner-item {
-  /* flex: 0 0 5em; */
-  /*flex: 0 0 auto;
-}
-  */
-/* 
-section.partners-section .partner-item img {
-  width: auto;
-  height: 50px;
-  display: block;
-  filter: grayscale(100%);
-  transition: filter 0.3s ease, transform 0.3s ease;
-}
-
-section.partners-section .partner-item img:hover {
-  filter: grayscale(0%);
-  transform: scale(1.1);
-}
-
-@keyframes slide {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-} */
-
-
 /* FOOTER */
-
 footer {
   background-color: #3E3E3E;
   color: hsla(0, 0%, 100%, .6);
@@ -536,7 +481,6 @@ footer ul li a:hover {
 }
 
 /* COPYRIGHT */
-
 section.copyright {
   text-align: center;
   color: hsla(0, 0%, 100%, .6);
@@ -551,7 +495,8 @@ section.copyright {
 /*######################*/
 /* SERVICES PAGE */
 /*######################*/
-/* services */
+
+/* services section */
 section.services-section {
   background: linear-gradient(180deg, #f4f6f8 0%, #eef2f5 100%);
 }
@@ -560,41 +505,24 @@ section.services-section div.container {
   display: flex;
   flex-direction: column;
   gap: 0;
-  padding: 80px 0;
-  align-items: stretch;
+  padding: 80px 0 60px 0;
 }
 
-section.services-section div.services-card,
-section.services-section div.services-card-center {
-  background: transparent;
-  border-radius: 0;
-  padding: 28px 18px;
-  border: none;
-  border-bottom: 1px solid rgba(27, 32, 36, 0.18);
-  box-shadow: none;
+section.services-section div.services-card{
   display: flex;
   flex-direction: column;
   gap: 12px;
-  position: relative;
-  overflow: hidden;
-  transition: background-color 0.2s ease, border-color 0.2s ease;
+  padding: 28px 18px;
+  border-bottom: 1px solid rgba(27, 32, 36, 0.18);
 }
 
-/* section.services-section div.services-card-center {
-  width: 100%;
-} */
+section.services-section div.services-card:first-child {
+  border-top: 1px solid rgba(27, 32, 36, 0.18);
+}
 
-section.services-section div.services-card:hover,
-section.services-section div.services-card-center:hover {
-  transform: none;
-  box-shadow: none;
+section.services-section div.services-card:hover{
   background: rgba(31, 189, 110, 0.05);
   border-bottom-color: rgba(66, 112, 89, 0.35);
-}
-
-section.services-section div.services-card:first-child,
-section.services-section div.services-card-center:first-child {
-  border-top: 1px solid rgba(27, 32, 36, 0.18);
 }
 
 section.services-section div.title-row {
@@ -602,29 +530,22 @@ section.services-section div.title-row {
   align-items: center;
   gap: 10px;
   margin-bottom: 8px;
-  align-items: center;
 }
 
 section.services-section div.title-row h3 {
+  font-size: 22px;
+  color: #1b2024;
+  font-weight: 500;
   margin: 0;
 }
 
 section.services-section img.service-icon {
   width: 48px;
   height: 48px;
-  filter: none;
   padding: 10px;
   border-radius: 14px;
   background: linear-gradient(135deg, rgba(31, 189, 110, 0.18), rgba(31, 168, 189, 0.15));
   box-shadow: inset 0 0 0 1px rgba(31, 189, 110, 0.25);
-}
-
-
-section.services-section div.services-card h3 {
-  font-size: 22px;
-  color: #1b2024;
-  font-weight: 500;
-  margin: 0;
 }
 
 section.services-section div.services-card p {
@@ -639,30 +560,14 @@ section.services-section div.services-card h3,
 section.services-section a.expand {
   max-width: 820px;
 }
-/*Depricated*/
-/* section.services-section div.services-card-center h3 {
-  color: #f2f2f2;
-  font-weight: 500;
-  margin: 0;
-}
-
-section.services-section div.services-card-center p {
-  color: rgba(242, 242, 242, 0.85);
-  margin: 0;
-
-} */
 
 section.services-section a.expand{
-  display: inline-flex;
-  align-items: center;
   font-size: 16px;
   padding: 4px 0;
   font-weight: 500;
   text-decoration: none;
   color: #1fbd6e;
   transition: color 0.15s ease, transform 0.2s ease;
-  margin-top: auto;
-
 }
 
 section.services-section a.expand:hover {
@@ -676,58 +581,48 @@ section.services-section a.expand::after {
   font-size: 16px;
 }
 
-@media (max-width: 960px) {
-  section.services-section div.container {
-    flex-direction: column;
-  }
-
-  section.services-section div.services-card-center {
-    width: 100%;
-  }
-}
-
 /* HOW WE WORK SECTION */
 section.how-we-work {
   background-color: #3E3E3E;
   padding: 80px 0;
 }
 
-section.how-we-work .container {
+section.how-we-work .container .how-we-work-title {
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  align-items: center;
 }
 
 section.how-we-work h2 {
   font-size: 42px;
   font-weight: 700;
   color: #ffffff;
-  margin: 0 0 10px;
+  margin-bottom: 10px;
 }
 
 section.how-we-work h2 span {
   color: #1fbd6e;
 }
 
-section.how-we-work .section-subtitle {
+section.how-we-work p.section-subtitle {
   font-size: 20px;
   color: #1fa8bd;
-  margin: 0 0 16px;
-  font-weight: 400;
+  margin-bottom: 16px;
 }
 
-section.how-we-work .section-description {
+section.how-we-work p.section-description {
   font-size: 16px;
   color: hsla(0, 0%, 100%, 0.7);
   max-width: 700px;
-  margin: 0 auto 60px;
+  margin-bottom: 60px;
   line-height: 26px;
 }
 
 section.how-we-work .process-timeline {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
   position: relative;
-  padding: 0 20px;
 }
 
 section.how-we-work .timeline-line {
@@ -745,9 +640,9 @@ section.how-we-work .process-step {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   position: relative;
   z-index: 1;
-  padding: 0 10px;
 }
 
 section.how-we-work .step-badge {
@@ -798,9 +693,8 @@ section.how-we-work .process-step:hover .step-number.highlight {
 
 section.how-we-work .process-step h3 {
   font-size: 18px;
-  font-weight: 600;
   color: #ffffff;
-  margin: 0 0 10px;
+  margin-bottom: 10px;
 }
 
 section.how-we-work .process-step p {
@@ -811,29 +705,29 @@ section.how-we-work .process-step p {
   max-width: 180px;
 }
 
-
 /* FAQ SECTION */
 section.faq {
-  padding: 80px 40px;
-  background: linear-gradient(180deg, #e7f7fb 0%, #f2fbfd 100%);
+  margin: 60px 40px;
 }
 
-section.faq div.container {
-  font-family: 'Heebo', sans-serif;
+section.faq .container {
+  display: flex;
+  justify-content: center;
+  max-width: 760px;
+}
+
+section.faq .container .faq-content {
   background: #ffffff;
   color: #1b2024;
-  max-width: 760px;
+  width: 100%;
   padding: 40px 36px;
   border-radius: 22px;
-  border: 1px solid rgba(51, 198, 221, 0.25);
-  box-shadow: 0 18px 40px rgba(31, 168, 189, 0.18);
 }
 
-section.faq div.container h2 {
-  font-weight: 600;
+section.faq div.container .faq-content h2 {
   text-align: center;
   color: #1b2024;
-  margin: 0 0 24px;
+  margin-bottom: 24px;
   font-size: 32px;
   letter-spacing: 0.02em;
 }
@@ -898,24 +792,12 @@ section.faq details.faq-item p {
   max-width: 680px;
 }
 
-@media (max-width: 768px) {
-  section.faq {
-    padding: 60px 20px;
-  }
-
-  section.faq div.container {
-    padding: 28px 22px;
-  }
-
-  section.faq details.faq-item summary {
-    font-size: 16px;
-  }
-}
 
 /* =========================
    PROJECTS PAGE
 ========================= */
-/* hero headline cta button */
+
+/* hero headline + cta button */
 section.hero-headline {
   display: flex;
   justify-content: center;
@@ -1150,9 +1032,11 @@ section.clients-section .clients-track {
   }
 }
 
+
 /* =========================
    ABOUT US PAGE
 ========================= */
+
 /* about company */
 section.about-company {
   padding: 80px 0 40px;
@@ -1373,9 +1257,11 @@ section.team .team-flex .team-card p {
   margin: 0;
 }
 
+
 /* =========================
    CONTACT US PAGE
 ========================= */
+
 /* contact headline */
 section.contact-headline {
   padding: 40px 0 20px 0;
@@ -1622,9 +1508,11 @@ section.copyright {
   font-size: 14px;
 }
 
+
 /* =========================
    MAIN/LANDING PAGE
 ========================= */
+
 /* hero section */
 section.hero-section .hero-content h1,
 section.hero-section .hero-content p {
@@ -1691,7 +1579,6 @@ section.offer-section .offer-card p {
 /* why softon section */
 
 /* partners section */
-
 section.partners-section h1 {
   font-size: 34px;
   margin-bottom: 18px;
@@ -1701,15 +1588,81 @@ section.partners-section h1 {
   height: 48px;
 }
 
+
 /* =========================
    SERVICES PAGE
 ========================= */
-/*  */
+
+/* services section */
+section.services-section div.container {
+  padding: 60px 0 40px 0;
+}
+
+/* HOW WE WORK SECTION */
+section.how-we-work {
+  padding: 60px 0;
+}
+
+section.how-we-work h2 {
+  font-size: 40px;
+  margin-bottom: 8px;
+}
+
+section.how-we-work p.section-subtitle {
+  font-size: 19px;
+  margin-bottom: 14px;
+}
+
+section.how-we-work p.section-description {
+  font-size: 15px;
+  margin-bottom: 60px;
+  line-height: 24px;
+}
+
+section.how-we-work .step-number {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+section.how-we-work .process-step h3 {
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+section.how-we-work .process-step p {
+  font-size: 14px;
+}
+
+/* FAQ SECTION */
+section.faq {
+  margin: 50px 30px;
+}
+
+section.faq div.container .faq-content h2 {
+  font-size: 28px;
+  margin-bottom: 22px;
+}
+
+section.faq details.faq-item summary {
+  font-size: 17px;
+}
+
+
+section.faq details.faq-item summary::after {
+  font-size: 20px;
+}
+
+section.faq details.faq-item p {
+  line-height: 26px;
+  font-size: 15px;
+}
+
 
 /* =========================
    PROJECTS PAGE
 ========================= */
-/* hero headline cta button */
+
+/* hero headline + cta button */
 section.hero-headline {
   padding: 80px 20px;
 }
@@ -1737,7 +1690,7 @@ section.hero-headline button {
   padding: 14px 34px;
 }
 
-/* featuer work/projects */
+/* featured works/projects */
 section.featured-projects {
   padding: 20px 0 30px;
 }
@@ -1802,6 +1755,8 @@ section.clients-section .clients-track {
 /* =========================
    ABOUS US PAGE
 ========================= */
+
+/* about company */
 section.about-company {
   padding: 60px 0 30px;
 }
@@ -1879,6 +1834,8 @@ section.team .team-flex .team-card p {
 /* =========================
    CONTACT US PAGE
 ========================= */
+
+/* contact headline */
 section.contact-headline {
   padding: 36px 0 18px 0;
 }
@@ -1971,6 +1928,7 @@ header nav ul.nav-ul li.menu-icon {
 /* =========================
    MAIN/LANDING PAGE
 ========================= */
+
 /* hero section */
 section.hero-section .hero-content h1,
 section.hero-section .hero-content p {
@@ -2077,10 +2035,78 @@ section.partners-section h1 {
    SERVICES PAGE
 ========================= */
 
+/* services section */
+section.services-section div.container {
+  padding: 50px 0 40px 0;
+}
+
+/* HOW WE WORK SECTION */
+section.how-we-work {
+  padding: 40px 0;
+}
+
+section.how-we-work h2 {
+  font-size: 36px;
+  margin-bottom: 6px;
+}
+
+section.how-we-work p.section-subtitle {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+section.how-we-work p.section-description {
+  font-size: 14px;
+  margin-bottom: 56px;
+  line-height: 22px;
+}
+
+section.how-we-work .step-number {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+section.how-we-work .process-step h3 {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+section.how-we-work .process-step p {
+  font-size: 13px;
+  line-height: 16px;
+}
+
+/* FAQ SECTION */
+section.faq {
+  margin: 20px 20px;
+}
+
+section.faq .container .faq-content {
+  padding: 36px 32px;
+}
+
+section.faq div.container .faq-content h2 {
+  font-size: 26px;
+  margin-bottom: 18px;
+}
+
+section.faq details.faq-item summary {
+  font-size: 16px;
+}
+
+section.faq details.faq-item summary::after {
+  font-size: 18px;
+}
+
+section.faq details.faq-item p {
+  line-height: 22px;
+  font-size: 14px;
+}
 
 /* =========================
    PROJECTS PAGE
 ========================= */
+
 /* hero headline cta button */
 section.hero-headline {
   padding: 60px 20px;
@@ -2175,9 +2201,12 @@ section.clients-section .clients-track {
   height: 44px;
 }
 
+
 /* =========================
    ABOUS US PAGE
 ========================= */
+
+/* about company */
 section.about-company {
   padding: 50px 0 30px;
 }
@@ -2219,10 +2248,6 @@ section.mission-vision {
 section.mission-vision .container {
   gap: 20px;
   flex-wrap: wrap;
-}
-
-section.mission-vision .mv-card {
-  /* min-width: 420px; */
 }
 
 section.mission-vision .mv-card .mv-content {
@@ -2286,7 +2311,6 @@ section.team .team-flex .team-card h3 {
 section.team .team-flex .team-card p {
   font-size: 14px;
 }
-
 
 
 /* =========================
@@ -2387,7 +2411,6 @@ section.map {
 /* Styles for Mobile */
 /*##############################*/
 @media screen and (max-width: 576px) {
-
 .container{
     width: 92%;
   max-width: 92%;
@@ -2437,6 +2460,7 @@ footer ul:last-of-type {
 /* =========================
    MAIN/LANDING PAGE
 ========================= */
+
 /* hero section */
 section.hero-section .hero-content {
   position: initial;
@@ -2470,6 +2494,7 @@ section.hero-section button {
   height: 40px;
   font-size: 12px;
 }
+
 /* stats section */
 section.stats-section .container {
   padding: 14px 0;
@@ -2487,6 +2512,7 @@ section.stats-section span.stat-number {
 section.stats-section span.stat-label {
   font-size: 12px;
 }
+
 /* offer section */
 section.offer-section {
   padding: 24px 0px 36px 0px;
@@ -2535,7 +2561,6 @@ section.offer-section .offer-card p {
 /* why softon section */
 
 /* partners section */
-
 section.partners-section {
   padding: 10px 0 20px 0;
 }
@@ -2552,7 +2577,96 @@ section.partners-section h1 {
 /* =========================
    SERVICES PAGE
 ========================= */
+/* services section */
+section.services-section div.container {
+  padding: 40px 0 30px 0;
+}
 
+/* HOW WE WORK SECTION */
+section.how-we-work {
+  padding: 30px 0;
+}
+
+section.how-we-work h2 {
+  font-size: 34px;
+  margin-bottom: 4px;
+} 
+
+section.how-we-work p.section-subtitle {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+section.how-we-work p.section-description {
+  font-size: 14px;
+  margin-bottom: 20px;
+  line-height: 18px;
+  max-width: 360px;
+}
+
+section.how-we-work .process-timeline {
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+section.how-we-work .process-timeline .timeline-line  {
+  height: 700px;
+  width: 2px;
+  left: 50%;
+  /* display: none; */
+}
+
+section.how-we-work .step-badge {
+  top: -8px;
+}
+
+section.how-we-work .step-number.highlight {
+  margin-top: 20px;
+}
+
+section.how-we-work .step-number {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+section.how-we-work .process-step h3 {
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+
+section.how-we-work .process-step p {
+  font-size: 12px;
+  line-height: 14px;
+  max-width: 100px;
+}
+
+/* FAQ SECTION */
+section.faq {
+  margin: 20px 16px;
+}
+
+section.faq .container .faq-content {
+  padding: 28px 16px;
+}
+
+section.faq div.container .faq-content h2 {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+section.faq details.faq-item summary {
+  font-size: 14px;
+}
+
+section.faq details.faq-item summary::after {
+  font-size: 16px;
+}
+
+section.faq details.faq-item p {
+  font-size: 12px;
+  line-height: 20px;
+}
 
 /* =========================
    PROJECTS PAGE
@@ -2668,11 +2782,6 @@ section.about-company .container {
   flex-wrap: wrap;
 }
 
-section.about-company .about-text {
-  /* min-width: 460px; */
-  /* ?????????? needs to be improved */
-}
-
 section.about-company .about-text h1 {
   font-size: 30px;
 }
@@ -2754,10 +2863,6 @@ section.core-values .values-flex .value-card p{
 section.team .team-flex{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-}
-
-section.team .team-flex .team-card {
-
 }
 
 section.team .team-flex .team-card .team-profile-picture {
