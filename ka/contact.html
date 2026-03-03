@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <link href='https://fonts.googleapis.com/css?family=Heebo' rel='stylesheet'>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Softon</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+
+      <section class="logo">
+        <a href="index.html">
+          <img src="/img/header-logo.png" alt="header logo">
+        </a>
+      </section>
+
+      <nav>
+        <ul class="nav-ul">
+          <li><a href="services.html">სერვისები</a></li>
+          <li><a href="projects.html">პროექტები</a></li>
+          <li><a href="about.html">ჩვენ შესახებ</a></li>
+          <li><a href="contact.html" class="contact">დაგვიკავშირდით</a></li>
+          <li class="language-switch">
+            <button id="lang-switch" type="button" aria-label="Switch language">
+              <img src="/img/uk.png" alt="English">
+            </button>
+          </li>
+          <li class="menu-icon">
+            <button id="open-nav-menu">
+              <img src="/img/burger-icon.png" alt="menu icon">
+            </button>
+          </li>
+        </ul>
+
+        <div class="wrapper">
+          <ul class="burger-ul">
+            <li>
+              <button id="close-nav-menu" class="close-icon">
+                <img src="/img/close-icon.png" alt="close icon for burger menu">
+              </button>
+            </li>
+            <li><a href="index.html">მთავარი</a></li>
+            <li><a href="services.html">სერვისები</a></li>
+            <li><a href="projects.html">პროექტები</a></li>
+            <li><a href="about.html">ჩვენ შესახებ</a></li>
+            <li><a href="contact.html">დაგვიკავშირდით</a></li>
+            <li class="socials">
+              <p>Join our community</p>
+
+              <div>
+                <a href="#">
+                  <img src="/img/footer-logos/facebook.png" alt="Facebook logo" />
+                </a>
+                <a href="#">
+                  <img src="/img/footer-logos/linkedin.png" alt="linkedin logo" />
+                </a>
+                <a href="#">
+                  <img src="/img/footer-logos/tiktok.png" alt="TikTok logo" />
+                </a>
+                <a href="#">
+                  <img src="/img/footer-logos/instagram.png" alt="Instagram logo" />
+                </a>
+              </div>
+
+            </li>
+          </ul>
+        </div>
+
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="contact-headline">
+      <div class="container">
+        <h1>დაგვიკავშირდით</h1>
+        <p>
+          მოგვიყევით თქვენი იდეის, პროექტის ან გამოწვევის შესახებ — ჩვენი გუნდი მალე დაგიკავშირდებათ.
+        </p>
+      </div>
+    </section>
+
+    <section class="contact-info">
+      <div class="container">
+        <ul>
+          <li>
+            <img src="/img/footer-logos/location.png" alt="მდებარეობის აიკონი">
+            <h3>მდებარეობა:</h3>
+            <p>თბილისი, ჭავჭავაძის ქუჩა 62</p>
+          </li>
+          <li>
+            <img src="/img/footer-logos/phone-call.png" alt="ტელეფონის აიკონი">
+            <h3>ტელეფონი:</h3>
+            <p>+995 500 00 00 07</p>
+          </li>
+          <li>
+            <img src="/img/footer-logos/email.png" alt="ელფოსტის აიკონი">
+            <h3>ელფოსტა:</h3>
+            <p>info@softon.ge</p>
+          </li>
+          <li>
+            <img src="/img/footer-logos/working-hours-icon.png" alt="სამუშაო საათების აიკონი">
+            <h3>სამუშაო საათები:</h3>
+            <p>ორშ – პარ, 10:00 – 18:00</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="send-message-section">
+      <div class="container">
+
+        <!-- საკონტაქტო ფორმა -->
+        <div class="contact-form">
+          <h2>მოგვწერეთ შეტყობინება</h2>
+          <form action="#" method="post">
+            <div class="contact-grid">
+              <div class="form-group">
+                <input type="text" id="name" name="name" placeholder="*სახელი" required>
+              </div>
+
+              <div class="form-group">
+                <input type="tel" id="phone" name="phone" placeholder="*ტელეფონის ნომერი" required>
+              </div>
+
+              <div class="form-group">
+                <input type="email" id="email" name="email" placeholder="*you@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <input type="text" id="company" name="company" placeholder="კომპანია (არასავალდებულო)">
+              </div>
+
+              <div class="form-group">
+                <textarea id="message" name="message" rows="5"
+                  placeholder="თქვენი შეტყობინება (არასავალდებულო)"></textarea>
+              </div>
+            </div>
+            <button type="submit" class="btn-primary">
+              გაგზავნა
+            </button>
+          </form>
+        </div>
+
+        <div class="benefits-box">
+          <p>რატომ გვიკავშირდებით ჩვენ?</p>
+          <ul>
+            <li>სწრაფი უკუკავშირი</li>
+            <li>გამჭვირვალე კომუნიკაცია</li>
+            <li>გამოცდილი დეველოპერები</li>
+            <li>გრძელვადიანი მხარდაჭერა</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- რუკა -->
+    <section class="map">
+      <iframe src="https://www.google.com/maps?q=62%20Ilia%20Chavchavadze%20Ave%2C%20Tbilisi%2C%20Georgia&output=embed"
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <ul>
+        <li>
+          <a href="index.html"> <img src="/img/header-logo.png" alt="footer company logo">
+          </a>
+        </li>
+        <li class="footer-contact"><img src="/img/footer-logos/location.png" alt="Location">ჭავჭავაძის გამზ. 14, თბილისი
+        </li>
+        <li class="footer-contact"><img src="/img/footer-logos/phone-call.png" alt="Phone number">+995 500 00 00 07</li>
+        <li class="footer-contact"><img src="/img/footer-logos/email.png" alt="Email">info@softon.ge</li>
+        <li>
+          <ul class="social-logos">
+            <li><a href="#"><img src="/img/footer-logos/facebook.png"></a></li>
+            <li><a href="#"><img src="/img/footer-logos/linkedin.png"></a></li>
+            <li><a href="#"><img src="/img/footer-logos/tiktok.png"></a></li>
+            <li><a href="#"><img src="/img/footer-logos/instagram.png"></a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul>
+        <li><a href="services.html" class="list-title">სერვისები</a></li>
+        <li><a href="#">ვებ დეველოპმენტი</a></li>
+        <li><a href="#">მობილური აპლიკაციების დეველოპმენტი</a></li>
+        <li><a href="#">ციფრული პროდუქტების დიზაინი</a></li>
+        <li><a href="#">MVP დეველოპმენტი</a></li>
+        <li><a href="#">პროგრამული უზრუნველყოფის შექმნა</a></li>
+        <li><a href="#">გრძელვადიანი ტექნიკური მხარდაჭერა</a></li>
+      </ul>
+      <ul>
+        <li><a href="projects.html" class="list-title">პროექტები</a></li>
+        <li><a href="#">სამედიცინო ინდუსტრია</a></li>
+        <li><a href="#">ფინანსური ტექნოლოგიების ვებგვერდი</a></li>
+        <li><a href="#">ელექტრონული კომერციის ავეჯის მაღაზია</a></li>
+        <li><a href="#">ბურგერ ბარის ვებგვერდი</a></li>
+        <li><a href="#">ფიტნეს კლუბის CRM სისტემა</a></li>
+        <li><a href="#">Educity – საგანმანათლებლო ცენტრი</a></li>
+      </ul>
+      <ul>
+        <li><a href="about.html" class="list-title">ჩვენ შესახებ</a></li>
+        <li><a href="#">კომპანიის შესახებ</a></li>
+        <li><a href="#">კომპანიის მისია</a></li>
+        <li><a href="#">ჩვენი ხედვა</a></li>
+        <li><a href="#">გუნდი</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <section class="copyright">
+    2026 &reg; ყველა უფლება დაცულია
+  </section>
+
+  <script src="/js/main.js"></script>
+</body>
+
+</html>

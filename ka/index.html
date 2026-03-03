@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <link href='https://fonts.googleapis.com/css?family=Heebo' rel='stylesheet'>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Softon</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+
+      <section class="logo">
+        <a href="index.html">
+          <img src="/img/header-logo.png" alt="header logo">
+        </a>
+      </section>
+
+      <nav>
+        <ul class="nav-ul">
+          <li><a href="services.html">სერვისები</a></li>
+          <li><a href="projects.html">პროექტები</a></li>
+          <li><a href="about.html">ჩვენ შესახებ</a></li>
+          <li><a href="contact.html" class="contact">დაგვიკავშირდით</a></li>
+          <li class="language-switch">
+            <button id="lang-switch" type="button" aria-label="Switch language">
+              <img src="/img/uk.png" alt="English">
+            </button>
+          </li>
+          <li class="menu-icon">
+            <button id="open-nav-menu">
+              <img src="/img/burger-icon.png" alt="menu icon">
+            </button>
+          </li>
+        </ul>
+
+        <div class="wrapper">
+          <ul class="burger-ul">
+            <li>
+              <button id="close-nav-menu" class="close-icon">
+                <img src="/img/close-icon.png" alt="close icon for burger menu">
+              </button>
+            </li>
+            <li><a href="index.html">მთავარი</a></li>
+            <li><a href="services.html">სერვისები</a></li>
+            <li><a href="projects.html">პროექტები</a></li>
+            <li><a href="about.html">ჩვენ შესახებ</a></li>
+            <li><a href="contact.html">დაგვიკავშირდით</a></li>
+            <li class="socials">
+              <p>Join our community</p>
+
+              <div>
+                <a href="#">
+                  <img src="/img/footer-logos/facebook.png" alt="Facebook logo" />
+                </a>
+                <a href="#">
+                  <img src="/img/footer-logos/linkedin.png" alt="linkedin logo" />
+                </a>
+                <a href="#">
+                  <img src="/img/footer-logos/tiktok.png" alt="TikTok logo" />
+                </a>
+                <a href="#">
+                  <img src="/img/footer-logos/instagram.png" alt="Instagram logo" />
+                </a>
+              </div>
+
+            </li>
+          </ul>
+        </div>
+
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero-section">
+
+    <picture>
+      <source media="(max-width : 576px)" srcset="/img/hero-mobile.jpg">
+      <!-- <source media="(max-width : 960px)" srcset="/img/hero-tablet.jpg">
+      <source media="(max-width : 1440px)" srcset="/img/hero-desktop.jpg"> -->
+      <img src="/img/hero-large-desktop.jpg" alt="ჰირო სექციის ფოტო">
+    </picture>
+
+    <section class="hero-content">
+      <div class="container">
+        <h1>ჩვენ გარდავქმნით იდეებს ციფრულ პროდუქტებად</h1>
+        <p>კონცეფციიდან დაწყებული, ჩვენ ვქმნით პროგრამულ პროდუქტს, რომელიც ვითარდება და ქმნის რეალურ ღირებულებას</p>
+        <button>
+          კონსულტაციის მოთხოვნა
+        </button>
+      </div>
+    </section>
+
+  </section>
+
+  <section class="stats-section">
+
+    <div class="container">
+      <ul class="stats-list">
+        <li>
+          <span class="stat-number">56</span>
+          <span class="stat-label">პროექტები</span>
+        </li>
+        <li class="stat-divider"></li>
+        <li>
+          <span class="stat-number">39</span>
+          <span class="stat-label">კლიენტები</span>
+        </li>
+        <li class="stat-divider"></li>
+        <li>
+          <span class="stat-number">16</span>
+          <span class="stat-label">გუნდი</span>
+        </li>
+        <li class="stat-divider"></li>
+        <li>
+          <span class="stat-number">47</span>
+          <span class="stat-label">პარტნიორები</span>
+        </li>
+      </ul>
+    </div>
+
+  </section>
+
+  <section class="offer-section">
+    <div class="container">
+
+      <div class="offer-header">
+        <h2>რას გთავაზობთ</h2>
+        <p>
+          ჩვენ ვეხმარებით ბიზნესებს იდეების სანდო, მასშტაბირებად და
+          მომხმარებელზე ორიენტირებულ ციფრულ პროდუქტებად გარდაქმნაში.
+        </p>
+      </div>
+
+      <div class="offer-grid">
+
+        <a href="/en/index.html" class="offer-card">
+          <img src="/img/what-we-offer/web-dev-logo.png" alt="კონფიგურირებული პროგრამული უზრუნველყოფა">
+          <h3>ვებ დეველოპმენტი</h3>
+          <p>
+            სწრაფი, რეაგირებადი და თანამედროვე ვებსაიტები, რომლებიც შექმნილია
+            მაღალი წარმადობის, ხელმისაწვდომობისა და მასშტაბირებისთვის.
+          </p>
+        </a>
+
+        <a href="/en/index.html" class="offer-card">
+          <img src="/img/what-we-offer/mobile-dev-logo.png" alt="მასშტაბირებადი არქიტექტურა">
+          <h3>მობილური აპლიკაციების დეველოპმენტი</h3>
+          <p>
+            ინტუიტიური მობილური აპლიკაციები iOS და Android-ისთვის, გლუვი წარმადობით
+            და მომხმარებელზე ორიენტირებული დიზაინით.
+          </p>
+        </a>
+
+        <a href="/en/index.html" class="offer-card">
+          <img src="/img/what-we-offer/UX-UI-logo.png" alt="UI UX დიზაინი">
+          <h3>ციფრული პროდუქტების დიზაინი</h3>
+          <p>
+            სუფთა, ინტუიტიური ინტერფეისები, მომხმარებლის
+            ჩართულობისა და კმაყოფილების გასაზრდელად.
+          </p>
+        </a>
+
+        <a href="/en/index.html" class="offer-card">
+          <img src="/img/what-we-offer/mvp-logo.png" alt="Agile განვითარება">
+          <h3>MVP-ის განვითარება</h3>
+          <p>
+            სწრაფი MVP-ის განვითარება იდეების დასადასტურებლად,
+            გამოხმაურების მისაღებად და ბაზარზე სწრაფი გაშვებისთვის.
+          </p>
+        </a>
+
+        <a href="/en/index.html" class="offer-card">
+          <img src="/img/what-we-offer/custom-dev-logo.png" alt="კომუნიკაცია">
+          <h3>ინდივიდუალური პროგრამული უზრუნველყოფა</h3>
+          <p>
+            ინდივიდუალური პროგრამული გადაწყვეტილებები, თქვენი ბიზნესის მიზნებთან,
+            პროცესებთან და ზრდის გეგმებთან შესაბამისობაში.
+          </p>
+        </a>
+
+        <a href="/en/index.html" class="offer-card">
+          <img src="/img/what-we-offer/tech-support-logo.png" alt="მხარდაჭერა">
+          <h3>გრძელვადიანი მხარდაჭერა</h3>
+          <p>
+            სანდო ტექნიკური მხარდაჭერა, მონიტორინგი და მუდმივი გაუმჯობესება,
+            რათა თქვენმა პროდუქტმა ყოველთვის უსაფრთხოდ და სტაბილურად იმუშაოს.
+          </p>
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="why-softon-section">
+    <picture>
+      <img src="/img/tech-city.png" alt="ტექნოლოგიური ქალაქის ფოტო">
+    </picture>
+  </section>
+
+  <section class="partners-section">
+    <div class="container">
+      <h1>ჩვენი პარტნიორები</h1>
+
+      <div class="partners-carousel">
+        <div class="partners-marquee">
+          <div class="partners-track">
+            <!-- Original -->
+            <div class="partner-item"><img src="/img/partners/tbc-logo.png" alt="TBC"></div>
+            <div class="partner-item"><img src="/img/partners/bog-logo.png" alt="BOG"></div>
+            <div class="partner-item"><img src="/img/partners/credo-logo.png" alt="CREDO"></div>
+            <div class="partner-item"><img src="/img/partners/tbilisi-city-hall-logo.png" alt="თბილისის მერია"></div>
+            <div class="partner-item"><img src="/img/partners/nbg-logo-01.png" alt="NBG"></div>
+            <div class="partner-item"><img src="/img/partners/magti-logo.png" alt="მაგთი"></div>
+            <div class="partner-item"><img src="/img/partners/silknet-logo.png" alt="სილქნეტი"></div>
+
+            <!-- Duplicated -->
+            <div class="partner-item"><img src="/img/partners/tbc-logo.png" alt="TBC"></div>
+            <div class="partner-item"><img src="/img/partners/bog-logo.png" alt="BOG"></div>
+            <div class="partner-item"><img src="/img/partners/credo-logo.png" alt="CREDO"></div>
+            <div class="partner-item"><img src="/img/partners/tbilisi-city-hall-logo.png" alt="თბილისის მერია"></div>
+            <div class="partner-item"><img src="/img/partners/nbg-logo-01.png" alt="NBG"></div>
+            <div class="partner-item"><img src="/img/partners/magti-logo.png" alt="მაგთი"></div>
+            <div class="partner-item"><img src="/img/partners/silknet-logo.png" alt="სილქნეტი"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <ul>
+        <li>
+          <a href="index.html"> <img src="/img/header-logo.png" alt="footer company logo">
+          </a>
+        </li>
+        <li class="footer-contact"><img src="/img/footer-logos/location.png" alt="Location">ჭავჭავაძის გამზ. 14, თბილისი
+        </li>
+        <li class="footer-contact"><img src="/img/footer-logos/phone-call.png" alt="Phone number">+995 500 00 00 07</li>
+        <li class="footer-contact"><img src="/img/footer-logos/email.png" alt="Email">info@softon.ge</li>
+        <li>
+          <ul class="social-logos">
+            <li><a href="#"><img src="/img/footer-logos/facebook.png"></a></li>
+            <li><a href="#"><img src="/img/footer-logos/linkedin.png"></a></li>
+            <li><a href="#"><img src="/img/footer-logos/tiktok.png"></a></li>
+            <li><a href="#"><img src="/img/footer-logos/instagram.png"></a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul>
+        <li><a href="services.html" class="list-title">სერვისები</a></li>
+        <li><a href="#">ვებ დეველოპმენტი</a></li>
+        <li><a href="#">მობილური აპლიკაციების დეველოპმენტი</a></li>
+        <li><a href="#">ციფრული პროდუქტების დიზაინი</a></li>
+        <li><a href="#">MVP დეველოპმენტი</a></li>
+        <li><a href="#">პროგრამული უზრუნველყოფის შექმნა</a></li>
+        <li><a href="#">გრძელვადიანი ტექნიკური მხარდაჭერა</a></li>
+      </ul>
+      <ul>
+        <li><a href="projects.html" class="list-title">პროექტები</a></li>
+        <li><a href="#">სამედიცინო ინდუსტრია</a></li>
+        <li><a href="#">ფინანსური ტექნოლოგიების ვებგვერდი</a></li>
+        <li><a href="#">ელექტრონული კომერციის ავეჯის მაღაზია</a></li>
+        <li><a href="#">ბურგერ ბარის ვებგვერდი</a></li>
+        <li><a href="#">ფიტნეს კლუბის CRM სისტემა</a></li>
+        <li><a href="#">Educity – საგანმანათლებლო ცენტრი</a></li>
+      </ul>
+      <ul>
+        <li><a href="about.html" class="list-title">ჩვენ შესახებ</a></li>
+        <li><a href="#">კომპანიის შესახებ</a></li>
+        <li><a href="#">კომპანიის მისია</a></li>
+        <li><a href="#">ჩვენი ხედვა</a></li>
+        <li><a href="#">გუნდი</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <section class="copyright">
+    2026 &reg; ყველა უფლება დაცულია
+  </section>
+
+  <script src="/js/main.js"></script>
+</body>
+
+</html>

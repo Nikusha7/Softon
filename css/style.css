@@ -243,6 +243,7 @@ section.stats-section li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 section.stats-section li.stat-divider {
@@ -833,7 +834,7 @@ section.hero-headline h1.hero-title {
   font-weight: 800;
   color: #3e3e3e;
   margin: 0 auto 20px;
-  line-height: 54px;
+  line-height: 64px;
   max-width: 600px;
 }
 
@@ -1273,7 +1274,7 @@ section.contact-headline h1 {
   font-size: 42px;
   /* font-size:  clamp(1.8rem, 10vw, 2.6rem); */
   margin-bottom: 14px;
-  color: #111;
+  color: #3e3e3e;
 }
 
 section.contact-headline p {
@@ -1779,7 +1780,7 @@ section.mission-vision .container {
 }
 
 section.mission-vision .mv-card .mv-content {
-  width: 220px;
+  width: 260px;
   top: 8%;
   left:40px;
 }
@@ -1914,7 +1915,8 @@ header nav ul.nav-ul li{
   display: none;
 }
 
-header nav ul.nav-ul li.menu-icon {
+header nav ul.nav-ul li.menu-icon,
+header nav ul.nav-ul li.language-switch {
   display: inline-block;
 }
 
@@ -2497,7 +2499,7 @@ section.hero-section button {
 
 /* stats section */
 section.stats-section .container {
-  padding: 14px 0;
+  padding: 14px 4px;
 }
 
 section.stats-section li.stat-divider {
@@ -2611,7 +2613,7 @@ section.how-we-work .process-timeline {
 }
 
 section.how-we-work .process-timeline .timeline-line  {
-  height: 700px;
+  height: 660px;
   width: 2px;
   left: 50%;
   /* display: none; */
@@ -2638,7 +2640,7 @@ section.how-we-work .process-step h3 {
 section.how-we-work .process-step p {
   font-size: 12px;
   line-height: 14px;
-  max-width: 100px;
+  max-width: 120px;
 }
 
 /* FAQ SECTION */
@@ -2691,7 +2693,7 @@ section.hero-headline div.hero-tagline span {
 
 section.hero-headline h1.hero-title {
   font-size: 42px;
-  line-height: 40px;
+  line-height: 46px;
 }
 
 section.hero-headline p.hero-subtext {
@@ -2816,16 +2818,18 @@ section.mission-vision .mv-card {
 
 section.mission-vision .mv-card .mv-content {
   width: 200px;
-  top: 12%;
+  top: 4%;
   left: 30px;
 }
 
 section.mission-vision .mv-card h3{
   font-size: 20px;
+  margin-bottom: 3px;
 }
 
 section.mission-vision .mv-card .title-divider {
   width: 110px;
+  margin-bottom: 2px;
 }
 
 section.mission-vision .mv-card p {
