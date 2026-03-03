@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="icon" type="image/png" href="img/favicon.png" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="icon" type="image/png" href="/img/favicon.png" />
   <link href="https://fonts.googleapis.com/css?family=Heebo" rel="stylesheet" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,25 +16,25 @@
     <div class="container">
 
       <section class="logo">
-        <a href="/">
-          <img src="img/header-logo.png" alt="header logo">
+        <a href="/en/index.html">
+          <img src="/img/header-logo.png" alt="header logo">
         </a>
       </section>
 
       <nav>
         <ul class="nav-ul">
-          <li><a href="/services.html">Services</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html" class="contact">Contact Us</a></li>
-          <li>
-            <button type="button" aria-label="Switch language">
-              <img src="img/uk.png" alt="English">
+          <li><a href="/en/services.html">Services</a></li>
+          <li><a href="/en/projects.html">Projects</a></li>
+          <li><a href="/en/about.html">About</a></li>
+          <li><a href="/en/contact.html" class="contact">Contact Us</a></li>
+          <li class="language-switch">
+            <button id="lang-switch" type="button" aria-label="Switch language">
+              <img src="/img/geo.png" alt="Georgian">
             </button>
           </li>
           <li class="menu-icon">
             <button id="open-nav-menu">
-              <img src="img/menu_icon.png" alt="menu icon">
+              <img src="/img/burger-icon.png" alt="menu icon">
             </button>
           </li>
         </ul>
@@ -43,29 +43,29 @@
           <ul class="burger-ul">
             <li>
               <button id="close-nav-menu" class="close-icon">
-                <img src="img/close-icon.png" alt="close icon for burger menu">
+                <img src="/img/close-icon.png" alt="close icon for burger menu">
               </button>
             </li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="/en/index.html">Home</a></li>
+            <li><a href="/en/services.html">Services</a></li>
+            <li><a href="/en/projects.html">Projects</a></li>
+            <li><a href="/en/about.html">About</a></li>
+            <li><a href="/en/contact.html">Contact Us</a></li>
             <li class="socials">
               <p>Join our community</p>
 
               <div>
                 <a href="#">
-                  <img src="img/footer-logos/facebook.png" alt="Facebook logo" />
+                  <img src="/img/footer-logos/facebook.png" alt="Facebook logo" />
                 </a>
                 <a href="#">
-                  <img src="img/footer-logos/linkedin.png" alt="linkedin logo" />
+                  <img src="/img/footer-logos/linkedin.png" alt="linkedin logo" />
                 </a>
                 <a href="#">
-                  <img src="img/footer-logos/tiktok.png" alt="TikTok logo" />
+                  <img src="/img/footer-logos/tiktok.png" alt="TikTok logo" />
                 </a>
                 <a href="#">
-                  <img src="img/footer-logos/instagram.png" alt="Instagram logo" />
+                  <img src="/img/footer-logos/instagram.png" alt="Instagram logo" />
                 </a>
               </div>
 
@@ -78,12 +78,11 @@
   </header>
 
   <section class="services-section">
-
     <div class="container">
 
       <div class="services-card">
         <div class="title-row">
-          <img class="service-icon" src="img/services/web.svg" alt="Web development icon" />
+          <img class="service-icon" src="/img/services/web.svg" alt="Web development icon" />
           <h3>Web development</h3>
         </div>
 
@@ -97,7 +96,7 @@
 
       <div class="services-card">
         <div class="title-row">
-          <img class="service-icon" src="img/services/mobile.svg" alt="Mobile app development icon" />
+          <img class="service-icon" src="/img/services/mobile.svg" alt="Mobile app development icon" />
           <h3>Mobile App development</h3>
         </div>
 
@@ -111,9 +110,10 @@
 
       <div class="services-card">
         <div class="title-row">
-          <img class="service-icon" src="img/services/design.svg" alt="Digital product design icon" />
+          <img class="service-icon" src="/img/services/design.svg" alt="Digital product design icon" />
           <h3>Digital product designs</h3>
         </div>
+
         <p>
           We build custom mobile apps that are tailored to your business
           needs. We use the latest technologies and best practices to ensure
@@ -124,9 +124,10 @@
 
       <div class="services-card">
         <div class="title-row">
-          <img class="service-icon" src="img/services/mvp.svg" alt="MVP development icon" />
+          <img class="service-icon" src="/img/services/mvp.svg" alt="MVP development icon" />
           <h3>MVP development</h3>
         </div>
+
         <p>
           We build custom mobile apps that are tailored to your business
           needs. We use the latest technologies and best practices to ensure
@@ -137,30 +138,47 @@
 
       <div class="services-card">
         <div class="title-row">
-          <img class="service-icon" src="img/services/software.svg" alt="Custom software development icon" />
+          <img class="service-icon" src="/img/services/software.svg" alt="Custom software development icon" />
           <h3>Custom Software development</h3>
         </div>
+
         <p>
           We build custom mobile apps that are tailored to your business
           needs. We use the latest technologies and best practices to ensure
           that your app is fast, secure, and easy to use.
         </p>
+        <a href="#" class="expand">Read more</a>
+      </div>
+
+      <div class="services-card">
+        <div class="title-row">
+          <img class="service-icon" src="/img/services/tech-support-logo.png" alt="technical support service icon" />
+          <h3>Long-term tech support </h3>
+        </div>
+
+        <p>
+          We provide ongoing technical support to keep your software stable,
+          secure, and up to date. From bug fixes to performance improvements,
+          our team ensures your product continues to run smoothly.
+        </p>
+
         <a href="#" class="expand">Read more</a>
       </div>
 
     </div>
-
   </section>
 
   <section class="how-we-work">
     <div class="container">
 
-      <h2>How <span>We Work</span></h2>
-      <p class="section-subtitle">From Idea to Launch, Step by Step</p>
-      <p class="section-description">
-        We turn your vision into reality through a proven development process.
-        Each phase builds on the last to deliver software that truly fits your needs.
-      </p>
+      <div class="how-we-work-title">
+        <h2>How <span>We Work</span></h2>
+        <p class="section-subtitle">From Idea to Launch, Step by Step</p>
+        <p class="section-description">
+          We turn your vision into reality through a proven development process.
+          Each phase builds on the last to deliver software that truly fits your needs.
+        </p>
+      </div>
 
       <div class="process-timeline">
         <div class="timeline-line"></div>
@@ -201,49 +219,52 @@
   </section>
 
   <section class="faq">
-
     <div class="container">
-      <h2>Frequently Asked Questions</h2>
-      <details class="faq-item">
-        <summary>What services do you offer?</summary>
-        <p>We design and build web apps, mobile apps, MVPs, and custom software, handling discovery, UX/UI, development,
-          and launch.</p>
-      </details>
-      <details class="faq-item">
-        <summary>How long does a typical project take?</summary>
-        <p>Timelines vary by scope, but most MVPs take 6–10 weeks, while larger platforms take 3–5 months.</p>
-      </details>
-      <details class="faq-item">
-        <summary>Can you work with an existing product?</summary>
-        <p>Yes. We can audit, improve, and extend current systems, or rebuild parts that need better performance or
-          scale.</p>
-      </details>
-    </div>
 
+      <div class="faq-content">
+        <h2>Frequently Asked Questions</h2>
+        <details class="faq-item">
+          <summary>What services do you offer?</summary>
+          <p>We design and build web apps, mobile apps, MVPs, and custom software, handling discovery, UX/UI,
+            development,
+            and launch.</p>
+        </details>
+        <details class="faq-item">
+          <summary>How long does a typical project take?</summary>
+          <p>Timelines vary by scope, but most MVPs take 6–10 weeks, while larger platforms take 3–5 months.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Can you work with an existing product?</summary>
+          <p>Yes. We can audit, improve, and extend current systems, or rebuild parts that need better performance or
+            scale.</p>
+        </details>
+      </div>
+
+    </div>
   </section>
 
   <footer>
     <div class="container">
       <ul>
         <li>
-          <a href="/"> <img src="img/header-logo.png" alt="footer company logo">
+          <a href="/en/index.html"> <img src="/img/header-logo.png" alt="footer company logo">
           </a>
         </li>
-        <li class="footer-contact"><img src="img/footer-logos/location.png" alt="Location">Georgia Tbilisi Chavcahvade
+        <li class="footer-contact"><img src="/img/footer-logos/location.png" alt="Location">Georgia Tbilisi Chavcahvade
         </li>
-        <li class="footer-contact"><img src="img/footer-logos/phone-call.png" alt="Phone number">+995 500 00 00 07</li>
-        <li class="footer-contact"><img src="img/footer-logos/email.png" alt="Email">info@softon.ge</li>
+        <li class="footer-contact"><img src="/img/footer-logos/phone-call.png" alt="Phone number">+995 500 00 00 07</li>
+        <li class="footer-contact"><img src="/img/footer-logos/email.png" alt="Email">info@softon.ge</li>
         <li>
           <ul class="social-logos">
-            <li><a href="#"><img src="img/footer-logos/facebook.png"></a></li>
-            <li><a href="#"><img src="img/footer-logos/linkedin.png"></a></li>
-            <li><a href="#"><img src="img/footer-logos/tiktok.png"></a></li>
-            <li><a href="#"><img src="img/footer-logos/instagram.png"></a></li>
+            <li><a href="#"><img src="/img/footer-logos/facebook.png"></a></li>
+            <li><a href="#"><img src="/img/footer-logos/linkedin.png"></a></li>
+            <li><a href="#"><img src="/img/footer-logos/tiktok.png"></a></li>
+            <li><a href="#"><img src="/img/footer-logos/instagram.png"></a></li>
           </ul>
         </li>
       </ul>
       <ul>
-        <li><a href="services.html" class="list-title">Services</a></li>
+        <li><a href="/en/services.html" class="list-title">Services</a></li>
         <li><a href="#">Web development</a></li>
         <li><a href="#">Mobile app development</a></li>
         <li><a href="#">Digital product designs</a></li>
@@ -252,7 +273,7 @@
         <li><a href="#">Long-Term Support</a></li>
       </ul>
       <ul>
-        <li><a href="projects.html" class="list-title">Projects</a></li>
+        <li><a href="/en/projects.html" class="list-title">Projects</a></li>
         <li><a href="#">Healthcare Industry</a></li>
         <li><a href="#">Fintech Website</a></li>
         <li><a href="#">E-Commerce Funiture shop</a></li>
@@ -261,7 +282,7 @@
         <li><a href="#">Educity - Educational center</a></li>
       </ul>
       <ul>
-        <li><a href="about.html" class="list-title">About us</a></li>
+        <li><a href="/en/about.html" class="list-title">About us</a></li>
         <li><a href="#">About the company</a></li>
         <li><a href="#">Company Mission</a></li>
         <li><a href="#">Our Vision</a></li>
@@ -274,7 +295,7 @@
     2026 &reg; All Rights Reserved
   </section>
 
-  <script src="main.js"></script>
+  <script src="/js/main.js"></script>
 </body>
 
 </html>

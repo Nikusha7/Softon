@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <link href='https://fonts.googleapis.com/css?family=Heebo' rel='stylesheet'>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Softon</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+
+      <section class="logo">
+        <a href="index.html">
+          <img src="/img/header-logo.png" alt="header logo">
+        </a>
+      </section>
+
+      <nav>
+        <ul class="nav-ul">
+          <li><a href="services.html">სერვისები</a></li>
+          <li><a href="projects.html">პროექტები</a></li>
+          <li><a href="about.html">ჩვენ შესახებ</a></li>
+          <li><a href="contact.html" class="contact">დაგვიკავშირდით</a></li>
+          <li class="language-switch">
+            <button id="lang-switch" type="button" aria-label="Switch language">
+              <img src="/img/uk.png" alt="English">
+            </button>
+          </li>
+          <li class="menu-icon">
+            <button id="open-nav-menu">
+              <img src="/img/burger-icon.png" alt="menu icon">
+            </button>
+          </li>
+        </ul>
+
+        <div class="wrapper">
+          <ul class="burger-ul">
+            <li>
+              <button id="close-nav-menu" class="close-icon">
+                <img src="/img/close-icon.png" alt="close icon for burger menu">
+              </button>
+            </li>
+            <li><a href="index.html">მთავარი</a></li>
+            <li><a href="services.html">სერვისები</a></li>
+            <li><a href="projects.html">პროექტები</a></li>
+            <li><a href="about.html">ჩვენ შესახებ</a></li>
+            <li><a href="contact.html">დაგვიკავშირდით</a></li>
+            <li class="socials">
+              <p>Join our community</p>
+
+              <div>
+                <a href="#">
+                  <img src="/img/footer-logos/facebook.png" alt="Facebook logo" />
+                </a>
+                <a href="#">
+                  <img src="/img/footer-logos/linkedin.png" alt="linkedin logo" />
+                </a>
+                <a href="#">
+                  <img src="/img/footer-logos/tiktok.png" alt="TikTok logo" />
+                </a>
+                <a href="#">
+                  <img src="/img/footer-logos/instagram.png" alt="Instagram logo" />
+                </a>
+              </div>
+
+            </li>
+          </ul>
+        </div>
+
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero-headline">
+    <div class="container">
+
+      <!-- Small tagline above headline -->
+      <div class="hero-tagline">
+        <img src="/img/rocket-1.png" alt="რაკეტის იკონი">
+        <span>ციფრული პროექტების შექმნა</span>
+      </div>
+
+      <!-- Main headline -->
+      <h1 class="hero-title">
+        ციფრული პროდუქტები, რომლებიც ზრდის <span class="highlight">თქვენს ბიზნესს</span>
+      </h1>
+
+      <!-- Subtext / description -->
+      <p class="hero-subtext">
+        სტარტაპებიდან დაწყებული ინდუსტრიების ლიდერებთათვის, ჩვენ ვაშენებთ მყარ, მასშტაბირებად
+        და მომხმარებელზე ორიენტირებულ ციფრულ პროდუქტებს.
+      </p>
+
+      <!-- Call-to-action button -->
+      <button>
+        დაიწყე შენი პროექტი →
+      </button>
+
+    </div>
+  </section>
+
+  <section class="featured-projects">
+    <div class="container">
+
+      <h1>პროექტები</h1>
+
+      <div class="projects-grid">
+
+        <!-- Project Card 1 -->
+        <div class="project-card">
+
+          <div class="project-image">
+            <img src="/img/projects/healthcare-website.jpg" alt="პროექტი 1 ფოტო/სკრინშოტი">
+          </div>
+
+          <div class="project-content">
+            <h3>სამედიცინო ინდუსტრია</h3>
+            <p>
+              უსაფრთხო და მასშტაბირებადი სამედიცინო პლატფორმა კლინიკებისთვის და სამედიცინო ცენტრებისთვის.
+              სისტემა მოიცავს ვიზიტების დაგეგმვას, პაციენტის ჩანაწერების მართვას
+              და რეალურ დროში კომუნიკაციას ექიმებსა და პაციენტებს შორის, უზრუნველყოფს მონაცემების კონფიდენციალურობას
+              და მომხმარებლის შეუფერხებელ გამოცდილებას.
+            </p>
+            <div class="used-tech-stack">
+              <span>React</span>
+              <span>Typescript</span>
+              <span>Node.js</span>
+              <span>PostgreSQL</span>
+            </div>
+            <a href="#" class="cta-button">პროექტის ნახვა</a>
+          </div>
+
+        </div>
+
+        <!-- Project Card 2 -->
+        <div class="project-card">
+
+          <div class="project-image">
+            <img src="/img/projects/fintech-website.jpg" alt="პროექტი 2 ფოტო/სკრინშოტი">
+          </div>
+
+          <div class="project-content">
+            <h3>ფინტეკ ინდუსტრია</h3>
+            <p>
+              თანამედროვე ფინტეკ ვებსაიტი უსაფრთხო ციფრული ტრანზაქციებისთვის და ფინანსური ანალიტიკისთვის.
+              პლატფორმა უზრუნველყოფს რეალურ დროში გადახდების დამუშავებას,
+              მომხმარებლის დაფებს, ტრანზაქციების ისტორიის კონტროლს და
+              გაფართოებულ მონაცემთა ვიზუალიზაციის ხელსაწყოებს ჭკვიანი ფინანსური გადაწყვეტილებებისთვის.
+            </p>
+            <div class="used-tech-stack">
+              <span>React</span>
+              <span>Typescript</span>
+              <span>Node.js</span>
+              <span>PostgreSQL</span>
+            </div>
+            <a href="#" class="cta-button">პროექტის ნახვა</a>
+          </div>
+
+        </div>
+
+        <!-- Project Card 3 -->
+        <div class="project-card">
+
+          <div class="project-image">
+            <img src="/img/projects/furniture-website.jpg" alt="პროექტი 3 ფოტო/სკრინშოტი">
+          </div>
+
+          <div class="project-content">
+            <h3>ელ-კომერცია – ავეჯის მაღაზია</h3>
+            <p>
+              სრულად რეაგირებადი ელ-კომერციის პლატფორმა ავეჯის საცალო მაღაზიისთვის, რომელიც მოიცავს
+              პროდუქტის ფილტრაციას, უსაფრთხო გადახდებს, ინვენტარის მართვას და ინტუიტიურ
+              ადმინისტრაციულ დაფას. შექმნილია გლუვი შოპინგის გამოცდილებისთვის ყველა მოწყობილობაზე.
+            </p>
+            <div class="used-tech-stack">
+              <span>React</span>
+              <span>Typescript</span>
+              <span>Node.js</span>
+              <span>PostgreSQL</span>
+            </div>
+            <a href="#" class="cta-button">პროექტის ნახვა</a>
+          </div>
+
+        </div>
+
+        <!-- Project Card 4 -->
+        <div class="project-card">
+
+          <div class="project-image">
+            <img src="/img/projects/burger-bar-website.jpg" alt="პროექტი 4 ფოტო/სკრინშოტი">
+          </div>
+
+          <div class="project-content">
+            <h3>Burger Bar</h3>
+            <p>
+              დინამიური ვებსაიტი და ონლაინ შეკვეთის სისტემა ადგილობრივი ბურგერის რესტორნისთვის.
+              პლატფორმა მოიცავს ციფრულ მენიუს მართვას, მაგიდების დაჯავშნას,
+              შეკვეთების ტრეკინგს და ინტეგრირებულ გადახდის სისტემას მომხმარებლის
+              კომფორტისა და ჩართულობის გასაზრდელად.
+            </p>
+            <div class="used-tech-stack">
+              <span>React</span>
+              <span>Typescript</span>
+              <span>Node.js</span>
+              <span>PostgreSQL</span>
+            </div>
+            <a href="#" class="cta-button">პროექტის ნახვა</a>
+          </div>
+
+        </div>
+
+        <!-- Project Card 5 -->
+        <div class="project-card">
+
+          <div class="project-image">
+            <img src="/img/projects/crm.jpg" alt="პროექტი 5 ფოტო/სკრინშოტი">
+          </div>
+
+          <div class="project-content">
+            <h3>CRM სისტემა</h3>
+            <p>
+              ინდივიდუალური CRM სისტემა მომხმარებლის მართვის, გაყიდვების მონიტორინგისა
+              და შიდა გუნდის კოორდინაციის გასაუმჯობესებლად. გადაწყვეტა მოიცავს
+              როლზე დაფუძნებულ წვდომას, ანგარიშგების ხელსაწყოებს და სამუშაო პროცესის ავტომატიზაციას.
+            </p>
+            <div class="used-tech-stack">
+              <span>React</span>
+              <span>Typescript</span>
+              <span>Node.js</span>
+              <span>PostgreSQL</span>
+            </div>
+            <a href="#" class="cta-button">პროექტის ნახვა</a>
+          </div>
+
+        </div>
+
+        <!-- Project Card 6 -->
+        <div class="project-card">
+
+          <div class="project-image">
+            <img src="/img/projects/educity-screenshot.png" alt="პროექტი 6 ფოტო/სკრინშოტი">
+          </div>
+
+          <div class="project-content">
+            <h3>Educity - სასწავლო ცენტრი</h3>
+            <p>
+              ყოვლისმომცველი საგანმანათლებლო მართვის პლატფორმა სასწავლო ცენტრებისა და
+              ინსტიტუტებისათვის. სისტემა მხარს უჭერს კურსების მართვას, სტუდენტების რეგისტრაციას,
+              დასწრების კონტროლს და შესრულების ანგარიშგებას მომხმარებელზე მეგობრულ
+              ადმინისტრაციულ ინტერფეისზე.
+            </p>
+            <div class="used-tech-stack">
+              <span>React</span>
+              <span>Typescript</span>
+              <span>Node.js</span>
+              <span>PostgreSQL</span>
+            </div>
+            <a href="#" class="cta-button">პროექტის ნახვა</a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="clients-section">
+    <div class="container">
+
+      <h1>ჩვენი კლიენტები</h1>
+
+      <div class="clients-carousel">
+        <div class="clients-marquee">
+          <div class="clients-track">
+            <!-- Original -->
+            <div class="clients-item"><img src="/img/clients/educity-logo-1.webp" alt="Educity"></div>
+            <div class="clients-item"><img src="/img/partners/bog-logo.png" alt="BOG"></div>
+            <div class="clients-item"><img src="/img/partners/credo-logo.png" alt="CREDO"></div>
+            <div class="clients-item"><img src="/img/partners/tbilisi-city-hall-logo.png" alt="თბილისის მერია">
+            </div>
+            <div class="clients-item"><img src="/img/partners/nbg-logo-01.png" alt="NBG"></div>
+            <div class="clients-item"><img src="/img/partners/magti-logo.png" alt="მაგთი"></div>
+            <div class="clients-item"><img src="/img/partners/silknet-logo.png" alt="სილქნეტი"></div>
+
+            <!-- Duplicated -->
+            <div class="clients-item"><img src="/img/partners/tbc-logo.png" alt="TBC"></div>
+            <div class="clients-item"><img src="/img/partners/bog-logo.png" alt="BOG"></div>
+            <div class="clients-item"><img src="/img/partners/credo-logo.png" alt="CREDO"></div>
+            <div class="clients-item"><img src="/img/partners/tbilisi-city-hall-logo.png" alt="თბილისის მერია">
+            </div>
+            <div class="clients-item"><img src="/img/partners/nbg-logo-01.png" alt="NBG"></div>
+            <div class="clients-item"><img src="/img/partners/magti-logo.png" alt="მაგთი"></div>
+            <div class="clients-item"><img src="/img/partners/silknet-logo.png" alt="სილქნეტი"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <ul>
+        <li>
+          <a href="index.html"> <img src="/img/header-logo.png" alt="footer company logo">
+          </a>
+        </li>
+        <li class="footer-contact"><img src="/img/footer-logos/location.png" alt="Location">ჭავჭავაძის გამზ. 14, თბილისი
+        </li>
+        <li class="footer-contact"><img src="/img/footer-logos/phone-call.png" alt="Phone number">+995 500 00 00 07</li>
+        <li class="footer-contact"><img src="/img/footer-logos/email.png" alt="Email">info@softon.ge</li>
+        <li>
+          <ul class="social-logos">
+            <li><a href="#"><img src="/img/footer-logos/facebook.png"></a></li>
+            <li><a href="#"><img src="/img/footer-logos/linkedin.png"></a></li>
+            <li><a href="#"><img src="/img/footer-logos/tiktok.png"></a></li>
+            <li><a href="#"><img src="/img/footer-logos/instagram.png"></a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul>
+        <li><a href="services.html" class="list-title">სერვისები</a></li>
+        <li><a href="#">ვებ დეველოპმენტი</a></li>
+        <li><a href="#">მობილური აპლიკაციების დეველოპმენტი</a></li>
+        <li><a href="#">ციფრული პროდუქტების დიზაინი</a></li>
+        <li><a href="#">MVP დეველოპმენტი</a></li>
+        <li><a href="#">პროგრამული უზრუნველყოფის შექმნა</a></li>
+        <li><a href="#">გრძელვადიანი ტექნიკური მხარდაჭერა</a></li>
+      </ul>
+      <ul>
+        <li><a href="projects.html" class="list-title">პროექტები</a></li>
+        <li><a href="#">სამედიცინო ინდუსტრია</a></li>
+        <li><a href="#">ფინანსური ტექნოლოგიების ვებგვერდი</a></li>
+        <li><a href="#">ელექტრონული კომერციის ავეჯის მაღაზია</a></li>
+        <li><a href="#">ბურგერ ბარის ვებგვერდი</a></li>
+        <li><a href="#">ფიტნეს კლუბის CRM სისტემა</a></li>
+        <li><a href="#">Educity – საგანმანათლებლო ცენტრი</a></li>
+      </ul>
+      <ul>
+        <li><a href="about.html" class="list-title">ჩვენ შესახებ</a></li>
+        <li><a href="#">კომპანიის შესახებ</a></li>
+        <li><a href="#">კომპანიის მისია</a></li>
+        <li><a href="#">ჩვენი ხედვა</a></li>
+        <li><a href="#">გუნდი</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <section class="copyright">
+    2026 &reg; ყველა უფლება დაცულია
+  </section>
+
+  <script src="/js/main.js"></script>
+</body>
+
+</html>
